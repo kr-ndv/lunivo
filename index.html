@@ -3,18 +3,17 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self' data:; connect-src 'self'; upgrade-insecure-requests">
   <meta name="theme-color" content="#283618">
-  <meta name="description" content="Lunivo is an independent directory of educational websites, digital libraries, research tools and learning resources.">
-  <meta property="og:title" content="Lunivo | Open learning directory">
+  <meta name="description" content="Vayanvesha is an independent directory of educational websites, digital libraries, research tools and learning resources.">
+  <meta property="og:title" content="Vayanvesha | Open learning directory">
   <meta property="og:description" content="Find educational websites, digital libraries, research tools and learning resources from India and around the world.">
   <meta property="og:type" content="website">
   <meta name="color-scheme" content="dark light">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="manifest" href="site.webmanifest">
-  <title>Lunivo | Open learning directory</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <title>Vayanvesha | Open learning directory</title>
   <style>
     :root {
       color-scheme: dark;
@@ -53,7 +52,7 @@
       min-width: 320px;
       background: var(--bg);
       color: var(--text);
-      font: 15px/1.6 Inter, system-ui, sans-serif;
+      font: 15px/1.6 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     }
     a { color: inherit; text-decoration: none; }
     button, input, select { font: inherit; }
@@ -84,7 +83,7 @@
       background: var(--bg); border-bottom: 1px solid var(--border);
     }
     .nav { min-height: 72px; display: flex; align-items: center; gap: 22px; }
-    .brand { display: inline-flex; align-items: center; min-height: 44px; gap: 9px; flex: 0 0 auto; font: 700 25px/1 "Space Grotesk", Inter, sans-serif; letter-spacing: -1px; }
+    .brand { display: inline-flex; align-items: center; min-height: 44px; gap: 9px; flex: 0 0 auto; font: 700 25px/1 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; letter-spacing: -1px; }
     .brand svg, .brand img { width: 36px; height: 36px; flex: 0 0 auto; }
     .brand-dot { color: #dda15e; }
     nav { display: flex; align-items: center; gap: 5px; margin-left: auto; }
@@ -100,7 +99,7 @@
     .hero { padding: 76px 0 65px; border-bottom: 1px solid var(--border); }
     .hero-layout { display: grid; grid-template-columns: minmax(0, 1.12fr) minmax(260px, .88fr); gap: 54px; align-items: center; }
     .hero-kicker { margin: 0; color: var(--accent); font-size: 11px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
-    h1, h2, h3 { font-family: "Space Grotesk", Inter, sans-serif; }
+    h1, h2, h3 { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
     h1 { max-width: 760px; margin: 15px 0 18px; font-size: clamp(42px, 5.4vw, 68px); line-height: 1.04; letter-spacing: -2.6px; }
     h1 span { color: var(--accent); }
     .hero-copy { max-width: 630px; margin: 0 0 27px; color: var(--muted); font-size: 15px; line-height: 1.8; }
@@ -149,12 +148,12 @@
       background: var(--surface-raised); border: 1px solid var(--border);
     }
     .collection-feature a { display: inline-flex; align-items: center; min-height: 44px; margin-top: 8px; color: var(--accent); font-size: 12px; font-weight: 800; }
-    .collection-feature strong { display: block; font: 600 17px "Space Grotesk", Inter, sans-serif; }
+    .collection-feature strong { display: block; font: 600 17px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
     .collection-list { display: grid; grid-template-columns: 1fr 1fr; gap: 0 25px; }
     .collection-link {
       display: block; padding: 15px 0; border-top: 1px solid var(--border);
     }
-    .collection-link strong { display: block; margin-bottom: 4px; font: 600 15px "Space Grotesk", Inter, sans-serif; }
+    .collection-link strong { display: block; margin-bottom: 4px; font: 600 15px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
     .collection-link span { display: block; color: var(--muted); font-size: 11px; line-height: 1.55; }
     .collection-link:hover strong { color: var(--accent); }
     .directory-section { padding: 64px 0 70px; }
@@ -215,7 +214,7 @@
     .card-actions a:hover { color: var(--accent-ink); filter: brightness(1.08); }
     .directory-state { margin: 14px 0; padding: 22px; border: 1px solid var(--border); border-radius: 10px; background: var(--surface); }
     .directory-state[hidden] { display: none; }
-    .directory-state strong { display: block; margin-bottom: 4px; font: 600 16px "Space Grotesk", Inter, sans-serif; }
+    .directory-state strong { display: block; margin-bottom: 4px; font: 600 16px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
     .directory-state p { margin: 0; color: var(--muted); font-size: 12px; }
     .directory-state button { min-height: 44px; margin-top: 12px; padding: 9px 12px; border: 1px solid var(--border); border-radius: 7px; background: var(--surface-raised); color: var(--text); font-size: 11px; font-weight: 700; }
     .additions-section { padding: 55px 0 62px; background: var(--surface); border-top: 1px solid var(--border); }
@@ -224,7 +223,7 @@
     .additions-heading p { margin: 0; color: var(--muted); font-size: 12px; }
     .addition-list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px 22px; }
     .addition-item { display: flex; flex-direction: column; padding: 12px 0; border-top: 1px solid var(--border); }
-    .addition-item a { display: flex; align-items: center; min-height: 44px; font: 600 14px "Space Grotesk", Inter, sans-serif; }
+    .addition-item a { display: flex; align-items: center; min-height: 44px; font: 600 14px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
     .addition-item a:hover { color: var(--accent); }
     .addition-item small { margin-top: 3px; color: var(--muted); font-size: 10px; }
     footer { padding: 46px 0 22px; border-top: 1px solid var(--border); }
@@ -320,9 +319,9 @@
   <a class="skip-link" href="#main-content">Skip to main content</a>
   <header>
     <div class="wrap nav">
-      <a class="brand" href="#home" aria-label="Lunivo home">
-        <img src="assets/lunivo-mark.svg" alt="" width="36" height="36">
-        <span>lunivo<span class="brand-dot">.</span></span>
+      <a class="brand" href="#home" aria-label="Vayanvesha home">
+        <img src="assets/vayanvesha-mark.svg" alt="" width="36" height="36">
+        <span>Vayanvesha<span class="brand-dot">.</span></span>
       </a>
       <nav id="siteNav" aria-label="Main navigation">
         <a href="#directory">Directory</a>
@@ -361,14 +360,7 @@
           </div>
         </div>
         <div class="hero-mark" aria-hidden="true">
-          <svg class="open-page-art" viewBox="0 0 360 270" fill="none">
-            <path d="M35 142C64 74 130 35 180 53c50-18 116 21 145 89-31 62-85 93-145 72-60 21-114-10-145-72Z" stroke="#dda15e" stroke-width="1.5" opacity=".72"/>
-            <path d="M70 88c37-17 75-13 110 10v112c-35-23-73-27-110-10V88Z" fill="#283618" stroke="#dda15e" stroke-width="2"/>
-            <path d="M290 88c-37-17-75-13-110 10v112c35-23 73-27 110-10V88Z" fill="#606c38" stroke="#fefae0" stroke-width="2"/>
-            <path d="M180 98v112" stroke="#dda15e" stroke-width="2"/>
-            <path d="M91 116c19-6 38-5 57 4M91 139c19-6 38-5 57 4M91 162c19-6 38-5 57 4M269 116c-19-6-38-5-57 4M269 139c-19-6-38-5-57 4M269 162c-19-6-38-5-57 4" stroke="#fefae0" stroke-width="2" stroke-linecap="round" opacity=".85"/>
-            <path d="M173 78h14v26l-7-5-7 5V78Z" fill="#bc6c25"/>
-          </svg>
+          <img class="open-page-art" src="assets/vayanvesha-app-icon.svg" alt="" width="320" height="320" decoding="async">
         </div>
       </div>
     </section>
@@ -435,7 +427,7 @@
           </div>
           <span class="total-count" id="resourceTotal">Preparing catalogue</span>
         </div>
-        <div class="notice"><strong>Independent directory.</strong> Lunivo does not own or operate listed websites. A source review records the reference checked during curation. It is not a live uptime check or a guarantee of access, licensing or availability. Legacy entries marked “Needs review” require a fresh destination check.</div>
+        <div class="notice"><strong>Independent directory.</strong> Vayanvesha does not own or operate listed websites. A source review records the reference checked during curation. It is not a live uptime check or a guarantee of access, licensing or availability. Legacy entries marked “Needs review” require a fresh destination check.</div>
         <div class="directory-search">
           <label class="filter-control" for="directorySearch"><span>Search resources</span><input id="directorySearch" type="search" placeholder="Name, subject, topic or keyword"></label>
           <label class="filter-control" for="sortOrder"><span>Sort results</span><select id="sortOrder"><option value="featured">Featured first</option><option value="recent">Recently added</option><option value="az">Name A to Z</option><option value="za">Name Z to A</option></select></label>
@@ -483,11 +475,11 @@
     <div class="wrap">
       <div class="footer-layout">
         <div class="footer-brand">
-          <a class="brand" href="#home" aria-label="Lunivo home">
+          <a class="brand" href="#home" aria-label="Vayanvesha home">
             <svg viewBox="0 0 48 48" aria-hidden="true" fill="none"><path d="M5 12 22 3v31L5 43V12Z" fill="#14b8a6"/><path d="M43 12 26 3v31l17 9V12Z" fill="#a7f3d0"/><path d="M22 34V3h4v31h-4Z" fill="#0d9488"/></svg>
-            <span>lunivo<span class="brand-dot">.</span></span>
+            <span>Vayanvesha<span class="brand-dot">.</span></span>
           </a>
-          <p>An independent directory for finding educational websites, digital libraries, research platforms and learning resources. Lunivo is not affiliated with CBSE, NCERT, the Ministry of Education or any listed institution or service.</p>
+          <p>An independent directory for finding educational websites, digital libraries, research platforms and learning resources. Vayanvesha is not affiliated with CBSE, NCERT, the Ministry of Education or any listed institution or service.</p>
         </div>
         <div class="footer-column">
           <h3>Browse</h3>
@@ -500,11 +492,11 @@
           <h3>Contribute</h3>
           <a href="https://github.com/kr-ndv/lunivo/issues/new?title=Suggest%20a%20resource" target="_blank" rel="noopener noreferrer">Suggest a resource</a>
           <a href="https://github.com/kr-ndv/lunivo/issues/new?title=Report%20a%20broken%20link" target="_blank" rel="noopener noreferrer">Report a broken link</a>
-          <a href="https://github.com/kr-ndv/lunivo">Lunivo on GitHub</a>
+          <a href="https://github.com/kr-ndv/lunivo">Vayanvesha on GitHub</a>
         </div>
       </div>
       <div class="footer-bottom">
-        <span>© <span id="currentYear"></span> Lunivo. Independent educational directory.</span>
+        <span>© <span id="currentYear"></span> Vayanvesha. Independent educational directory.</span>
         <span>External websites are operated by their respective owners.</span>
       </div>
     </div>
@@ -763,7 +755,7 @@
       q("#dialogRegion").textContent = item.region;
       q("#dialogAccess").textContent = item.access;
       q("#dialogReview").textContent = item.needsReview ? "Needs verification" : item.sourceCheckedOn ? `Source reviewed ${dateLabel(item.sourceCheckedOn)}` : "Legacy or institutional listing; check destination before relying on it";
-      q("#dialogSource").textContent = item.source || "Lunivo catalogue";
+      q("#dialogSource").textContent = item.source || "Vayanvesha catalogue";
       q("#dialogVisit").href = item.url;
       updateDialogSave();
       q("#resourceDialog").showModal();
@@ -891,7 +883,7 @@
         q("#loadingState").hidden = true;
         q("#resourceGrid").innerHTML = "";
         q("#errorState").hidden = false;
-        console.error("Lunivo catalogue error:", error);
+        console.error("Vayanvesha catalogue error:", error);
       }
     }
     init();

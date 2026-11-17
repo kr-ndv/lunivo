@@ -1,18 +1,11 @@
 {
-  "name": "Lunivo — Open learning directory",
-  "short_name": "Lunivo",
-  "description": "An independent directory of educational websites, digital libraries, research platforms and learning resources.",
+  "name": "Vayanvesha — Open learning directory",
+  "short_name": "Vayanvesha",
+  "description": "An independent directory of educational websites, digital libraries, research platforms and learning resources from India and around the world.",
   "start_url": "./#home",
   "scope": "./",
   "display": "standalone",
   "background_color": "#283618",
   "theme_color": "#283618",
-  "icons": [
-    {
-      "src": "assets/lunivo-app-icon.svg",
-      "sizes": "any",
-      "type": "image/svg+xml",
-      "purpose": "any"
-    }
-  ]
+  "icons": [{"src":"assets/vayanvesha-app-icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any"}]
 }

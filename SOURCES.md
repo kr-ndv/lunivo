@@ -1,6 +1,6 @@
 # Resource sources and verification
 
-Lunivo is an independent directory. It is not affiliated with CBSE, NCERT, the Ministry of Education, universities, publishers or any listed service.
+Vayanvesha is an independent directory. It is not affiliated with CBSE, NCERT, the Ministry of Education, universities, publishers or any listed service.
 
 ## How to read source status
 

@@ -1,26 +1,28 @@
-# Lunivo design direction
+# Vayanvesha design direction
 
 ## Product identity
 
-Lunivo is an independent, global directory of educational websites, digital libraries, research platforms and learning resources. Indian resources form a substantial collection within the wider directory.
+Vayanvesha is an independent, global directory of educational websites, digital libraries, research platforms and learning resources. Indian resources form a substantial collection within the wider directory.
 
-The primary audiences are students, educators, researchers and self-directed learners. The interface should help visitors judge what a resource is, who it serves, what it covers and what access conditions to expect before they leave Lunivo.
+The name is a coined blend inspired by Malayalam `vayana` (reading) and Sanskrit `anvesha` (inquiry or exploration). It is a brand construction, not a traditional dictionary word.
+
+The primary audiences are students, educators, researchers and self-directed learners. The interface should help visitors judge what a resource is, who it serves, what it covers and what access conditions to expect before they leave Vayanvesha.
 
 ## Brand character
 
-The Open Page mark represents an open book and the act of finding a new path into knowledge. Keep the mark simple and recognisable at small sizes. The wordmark uses lowercase `lunivo` with a quiet teal accent.
+The redesigned Open Book + Discovery mark combines an open book with a search motif and a small spark. It represents reading as a starting point for inquiry, discovery and wider learning. Keep the mark's proportions and palette consistent across the website, favicon, app icon and social artwork.
 
-The palette comes from the existing identity: deep green surfaces, warm off-white text, teal and mint accents. Light and dark themes are both first-class appearances. Use the accent for selection, important actions and links, not as decoration on every element.
+## Palette
 
-Space Grotesk is the display typeface for headings and brand text. Inter is the body typeface for clear reading. System sans-serif fallbacks keep content legible when remote fonts are unavailable.
+| Colour | Hex | Role |
+|---|---|---|
+| Deep olive | `#283618` | Primary dark background |
+| Olive | `#606c38` | Book page and secondary surfaces |
+| Warm cream | `#fefae0` | Light background and contrast |
+| Amber | `#dda15e` | Discovery detail and highlight |
+| Terracotta | `#bc6c25` | Secondary accent |
 
-## Design read
-
-Reading this as a content-first global educational directory for students, educators, researchers and self-directed learners, in Lunivo's Open Page visual language.
-
-- **ENERGY 2:** calm and editorial, with a little character in the mark, typography and active states.
-- **RHYTHM 3:** section composition changes with the task. The hero introduces search, categories provide a compact index, collections explain pathways, the directory is a working catalogue, and recent additions are a short list.
-- **MOTION 1:** no entrance choreography or automatic movement. Use restrained hover, pressed and focus feedback. Respect `prefers-reduced-motion`.
+Remote Google Fonts have been removed in favour of system font stacks to remove third-party font requests and reduce render-blocking network dependencies. Light and dark themes remain first-class appearances.
 
 ## Interface decisions
 
@@ -33,36 +35,25 @@ Reading this as a content-first global educational directory for students, educa
 
 ## Content and trust
 
-Lunivo is independent and is not affiliated with CBSE, NCERT, a ministry, university, publisher or any listed service. Each resource entry is an editorial directory record. The date shown as a source review date means the reference was checked during curation; it is not a live uptime test or a guarantee that every item is free, reusable or accessible.
+Vayanvesha is independent and is not affiliated with CBSE, NCERT, a ministry, university, publisher or any listed service. Each resource entry is an editorial directory record. The date shown as a source review date means the reference was checked during curation; it is not a live uptime test or a guarantee that every item is free, reusable or accessible.
 
 Use clear access descriptions such as `Free search; full text varies`, `Open access books`, or `Mixed access`. Copyright and licensing conditions may vary by item and country. Mark legacy or ambiguous destinations as needing review instead of making a confident claim.
 
 Never invent testimonials, user counts, rankings, popularity, uptime, accessibility certification or performance scores. A resource suggestion or broken-link report currently goes to GitHub Issues; it is not an in-site submission service.
 
-## Implementation constraints
+## Implementation, security and performance
 
-The project is a static site using vanilla HTML, CSS and JavaScript. Keep it dependency-light and maintainable. Do not add a backend, account system or framework without an explicit product decision. Ensure every control has a real action, both themes remain readable, and keyboard and mobile use remain supported.
+The project is a static site using vanilla HTML, CSS and JavaScript. Keep it dependency-light and maintainable. No backend, account system, runtime package or third-party JavaScript is required. Remote web fonts have been removed in favour of system fonts.
 
+The HTML includes a document-level Content Security Policy and a strict referrer policy. GitHub Pages does not support arbitrary HTTP response headers from repository files. If the site later moves behind a configurable CDN or hosting provider, configure response headers there: HSTS, X-Content-Type-Options, frame protection, a Permissions Policy and a production CSP. Do not claim these headers are active on GitHub Pages unless verified at the response level.
 
-## Brand identity — Palette 2
+## Brand assets
 
-The current identity uses the Open Page mark: an open book with a warm bookmark, representing discovery and access to knowledge. Keep the mark's proportions and colours consistent across the site, documentation and social profiles.
+- `assets/vayanvesha-mark.svg`: compact mark.
+- `assets/vayanvesha-logo.svg`: horizontal wordmark.
+- `assets/vayanvesha-app-icon.svg`: scalable app icon.
+- `assets/vayanvesha-social-preview.svg`: 1200 × 630 editable social artwork.
+- `favicon.svg`: browser icon.
+- `site.webmanifest`: install metadata and SVG app icon.
 
-| Colour | Hex | Role |
-|---|---|---|
-| Deep olive | `#283618` | Primary dark background and wordmark |
-| Olive | `#606c38` | Mark/page accent and secondary surfaces |
-| Warm cream | `#fefae0` | Light background and contrast |
-| Amber | `#dda15e` | Primary highlight and page spine |
-| Terracotta | `#bc6c25` | Bookmark and secondary accent |
-
-Use the cream mark on deep olive backgrounds; use the deep-olive wordmark on cream backgrounds. Avoid placing the mark on busy imagery or recolouring individual parts outside this palette. The reusable vectors are `assets/lunivo-mark.svg` and `assets/lunivo-logo.svg`.
-
-
-## Brand asset extensions
-
-- `assets/lunivo-app-icon.svg`: square 512 × 512 app icon with a rounded deep-olive tile.
-- `assets/lunivo-social-preview.svg`: 1200 × 630 social-sharing composition.
-- `site.webmanifest`: lightweight install metadata and SVG icon reference.
-
-The social preview is supplied as SVG source for easy editing and scaling. Some social platforms do not accept SVG as an Open Graph image; export a 1200 × 630 PNG for broad compatibility before using it as `og:image`. The static site does not add service-worker or offline functionality.
+The social artwork should also be exported as a 1200 × 630 PNG and used as the Open Graph image once the raster file is committed. The static site does not include a service worker or offline functionality.
