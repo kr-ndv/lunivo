@@ -20,7 +20,7 @@ Open `index.html` in a modern browser. Google Fonts load from the internet; all 
 Suitable for GitHub Pages or any static web host. For GitHub Pages, choose **Deploy from a branch**, select `main` and `/(root)` in repository Settings → Pages.
 
 ## Resource sourcing and editorial policy
-The starting catalogue combines links from the original [CBSE Library external-links directory](https://cbseacademic.nic.in/library/index.html) with institutional resource lists:
+The starting catalogue combines links from the original [CBSE Library external-links directory](https://cbseacademic.nic.in/library/index.html) with institutional resource lists and currently maintained official education platforms:
 - [KVS RO Ranchi — Digital Resources](https://roranchi.kvs.gov.in/en/digital-resources/)
 - [CSIR-CRRI — Open Access e-Resources](https://crridom.gov.in/en/open-access-e-resources)
 - [SBSGCH Library — E-Resources](https://sbsgch.ac.in/e-resources.html)
