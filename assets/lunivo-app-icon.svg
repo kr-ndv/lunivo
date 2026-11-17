@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none" role="img" aria-labelledby="title">
+  <title id="title">Lunivo app icon</title>
+  <rect width="512" height="512" rx="112" fill="#283618"/>
+  <path d="M64 137C126 104 188 107 256 144v296c-68-37-130-40-192-7V137Z" fill="#606c38"/>
+  <path d="M448 137c-62-33-124-30-192 7v296c68-37 130-40 192-7V137Z" fill="#fefae0"/>
+  <path d="M240 144c10 6 22 6 32 0v296c-10-6-22-6-32 0V144Z" fill="#dda15e"/>
+  <path d="M340 112h58v126l-29-23-29 23V112Z" fill="#bc6c25"/>
+</svg>
