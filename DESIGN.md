@@ -42,3 +42,18 @@ Never invent testimonials, user counts, rankings, popularity, uptime, accessibil
 ## Implementation constraints
 
 The project is a static site using vanilla HTML, CSS and JavaScript. Keep it dependency-light and maintainable. Do not add a backend, account system or framework without an explicit product decision. Ensure every control has a real action, both themes remain readable, and keyboard and mobile use remain supported.
+
+
+## Brand identity — Palette 2
+
+The current identity uses the Open Page mark: an open book with a warm bookmark, representing discovery and access to knowledge. Keep the mark's proportions and colours consistent across the site, documentation and social profiles.
+
+| Colour | Hex | Role |
+|---|---|---|
+| Deep olive | `#283618` | Primary dark background and wordmark |
+| Olive | `#606c38` | Mark/page accent and secondary surfaces |
+| Warm cream | `#fefae0` | Light background and contrast |
+| Amber | `#dda15e` | Primary highlight and page spine |
+| Terracotta | `#bc6c25` | Bookmark and secondary accent |
+
+Use the cream mark on deep olive backgrounds; use the deep-olive wordmark on cream backgrounds. Avoid placing the mark on busy imagery or recolouring individual parts outside this palette. The reusable vectors are `assets/lunivo-mark.svg` and `assets/lunivo-logo.svg`.
