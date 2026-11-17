@@ -9,8 +9,8 @@ A static, dependency-light website built with vanilla HTML, CSS and JavaScript.
 - Dark/light theme with locally remembered preference
 - Search across resource names, descriptions and metadata
 - Category filters and alphabetical sorting
-- Resource detail modal and external-link disclosure
-- Featured collections and additional resources
+- Resource detail dialog with source provenance, external-link disclosure and keyboard focus handling
+- Three curated collection pathways and additional resources
 - No account, backend, build step or runtime package required
 
 ## Run locally
