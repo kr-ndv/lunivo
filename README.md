@@ -48,4 +48,4 @@ Use the GitHub Issues links in the site footer to suggest a resource or report a
 
 ## Brand
 
-Lunivo uses the Open Page mark, teal and mint palette, Space Grotesk display typography and Inter body typography. `DESIGN.md` records the design direction and reasons for the main interface choices.
+Lunivo uses the Open Page mark and the olive, cream and amber palette. Reusable vector brand assets are in `assets/`: `lunivo-mark.svg` for icons and `lunivo-logo.svg` for the horizontal wordmark. The favicon uses the same mark. `DESIGN.md` records the design direction and colour roles.
