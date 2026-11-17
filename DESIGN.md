@@ -57,3 +57,12 @@ The current identity uses the Open Page mark: an open book with a warm bookmark,
 | Terracotta | `#bc6c25` | Bookmark and secondary accent |
 
 Use the cream mark on deep olive backgrounds; use the deep-olive wordmark on cream backgrounds. Avoid placing the mark on busy imagery or recolouring individual parts outside this palette. The reusable vectors are `assets/lunivo-mark.svg` and `assets/lunivo-logo.svg`.
+
+
+## Brand asset extensions
+
+- `assets/lunivo-app-icon.svg`: square 512 × 512 app icon with a rounded deep-olive tile.
+- `assets/lunivo-social-preview.svg`: 1200 × 630 social-sharing composition.
+- `site.webmanifest`: lightweight install metadata and SVG icon reference.
+
+The social preview is supplied as SVG source for easy editing and scaling. Some social platforms do not accept SVG as an Open Graph image; export a 1200 × 630 PNG for broad compatibility before using it as `og:image`. The static site does not add service-worker or offline functionality.
