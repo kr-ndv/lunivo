@@ -14,9 +14,9 @@ Legacy names transcribed from that page include CBSE Academic, NCERT, MHRD, e-Gy
 - SBSGCH Library, Library E-Resources: https://sbsgch.ac.in/e-resources.html
 - CBSE OER Appendix 2025: https://cdnbbsr.s3waas.gov.in/s3kv01c185440ab7ba6b1904b078bb4e0f/uploads/2025/07/2025072977.pdf
 
-## Manual review required
+## Current official platform references\n- DIKSHA: https://diksha.gov.in/ — the portal describes itself as a national school-education platform and an NCERT initiative under the Ministry of Education.\n- Rashtriya e-Pustakalaya: https://ndl.education.gov.in/ — Ministry of Education digital library portal.\n- CBSE CENBOSEC: https://cbseacademic.nic.in/cenbosec.html — current CENBOSEC publications page.\n\n## Manual review required
 Legacy names or destinations that are unclear or potentially obsolete are flagged within the dataset:
-- Digital Library of India
+- CBSE News Digest (the old directory label does not reveal a specific current destination)\n- Digital Library of India
 - National Science Digital Library
 - International Children's Digital Library
 - US Link
