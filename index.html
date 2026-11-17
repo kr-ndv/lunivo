@@ -1,63 +1,902 @@
-<!doctype html><html lang="en" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0b1f1b"><meta name="description" content="Lunivo — discover educational websites, digital libraries, research platforms and learning resources."><meta property="og:title" content="Lunivo — Discover beyond boundaries"><meta property="og:description" content="Explore educational websites, digital libraries, research platforms and learning resources from around the world."><meta property="og:type" content="website"><meta name="color-scheme" content="dark light"><link rel="icon" type="image/svg+xml" href="favicon.svg"><title>Lunivo — Discover beyond boundaries</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet"><style>
-:root{color-scheme:dark;--bg:#0b1f1b;--elev:#102923;--surface:#112f29;--surface2:#163b35;--text:#f4fbf8;--muted:#a6bdb6;--subtle:#78958b;--border:rgba(174,221,205,.15);--brand:#14b8a6;--mint:#a7f3d0;--shadow:0 18px 55px #0003}html[data-theme=light]{color-scheme:light;--bg:#f4f8f6;--elev:#fff;--surface:#fff;--surface2:#edf5f1;--text:#142b25;--muted:#536b62;--subtle:#71877e;--border:rgba(28,74,58,.13);--brand:#0d9488;--mint:#08796f;--shadow:0 15px 45px #17423112}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font:15px/1.6 Inter,system-ui,sans-serif;min-width:320px}a{color:inherit;text-decoration:none}button,input,select{font:inherit}button{cursor:pointer}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--brand);outline-offset:3px}.wrap{width:min(1160px,calc(100% - 44px));margin:auto}header{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(18px);border-bottom:1px solid var(--border)}.nav{height:74px;display:flex;align-items:center;gap:28px}.brand{display:flex;align-items:center;gap:10px;font:700 25px "Space Grotesk";letter-spacing:-1px}.brand svg{width:37px;height:37px}nav{margin-left:auto;display:flex;gap:5px}nav a,.navbtn{padding:9px 12px;border:0;background:none;color:var(--muted);border-radius:30px;font-size:12px;font-weight:700}nav a:hover,nav a.active{background:var(--surface2);color:var(--text)}.navbtn{border:1px solid var(--border);width:40px;height:40px;display:grid;place-items:center}.mobile{display:none}.hero{position:relative;overflow:hidden;padding:76px 0 62px;background:radial-gradient(ellipse at 83% 25%,#14b8a626,transparent 35%),radial-gradient(ellipse at 8% 100%,#14b8a620,transparent 38%),var(--elev);border-bottom:1px solid var(--border)}.herogrid{position:relative;z-index:1;display:grid;grid-template-columns:1.1fr .9fr;gap:35px;align-items:center}.eyebrow{color:var(--mint);font-size:10px;letter-spacing:1.5px;text-transform:uppercase;font-weight:800}.eyebrow:before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--brand);margin-right:9px}.hero h1{font:700 clamp(42px,5.5vw,65px)/1.04 "Space Grotesk";letter-spacing:-2.7px;margin:17px 0}.hero h1 span{color:var(--brand)}.intro{max-width:570px;color:var(--muted);line-height:1.8;margin-bottom:25px}.search{display:flex;gap:10px;align-items:center;padding:7px 8px 7px 15px;background:var(--bg);border:1px solid var(--border);border-radius:15px;max-width:640px;box-shadow:var(--shadow)}.search input{background:none;border:0;outline:0;color:var(--text);width:100%;min-width:0;padding:10px 0;font-size:13px}.search button,.primary{border:0;background:var(--brand);color:#05251f;border-radius:11px;padding:12px 17px;font-size:12px;font-weight:800}.search button:hover,.primary:hover{background:var(--mint)}.popular{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:15px;color:var(--subtle);font-size:11px}.pill{border:1px solid var(--border);background:var(--surface);color:var(--muted);border-radius:30px;padding:6px 10px;font-size:10px}.heroart{height:270px;display:grid;place-items:center;position:relative}.orbit{width:320px;height:185px;border:1px solid #2dd4bf88;border-radius:50%;transform:rotate(-23deg);position:absolute}.book{width:205px;height:165px;display:grid;place-items:center;border:1px solid #a7f3d055;border-radius:25px;background:linear-gradient(145deg,#14b8a644,#112f29dd);box-shadow:0 25px 65px #0005;transform:rotate(-8deg)}.book svg{width:100px;color:var(--mint)}main section{padding:65px 0}.cats{padding:28px 0 5px}.catgrid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}.cat{background:var(--surface);border:1px solid var(--border);border-radius:17px;padding:17px;text-align:left;min-height:125px;color:var(--text)}.cat:hover,.card:hover,.collection:hover{border-color:var(--brand);transform:translateY(-3px)}.cat .glyph{color:var(--brand);font-size:22px}.cat strong{display:block;font:600 14px "Space Grotesk";margin:9px 0 4px}.cat small{color:var(--muted);font-size:10px}.heading{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:23px}.kicker{color:var(--brand);font-size:10px;font-weight:800;letter-spacing:1.4px;text-transform:uppercase}.heading h2{font:700 clamp(25px,3vw,34px)/1.2 "Space Grotesk";margin:5px 0}.heading p{color:var(--muted);margin:0;font-size:13px}.link{color:var(--mint);font-size:12px;font-weight:700}.collections{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.collection{border:1px solid var(--border);border-radius:18px;padding:21px;min-height:155px;background:linear-gradient(140deg,var(--surface2),var(--surface));transition:.2s}.collection .glyph{color:var(--mint);font-size:23px}.collection h3{font:600 18px "Space Grotesk";margin:24px 0 3px}.collection p{font-size:11px;color:var(--muted);margin:0}.directory{background:var(--elev);border-block:1px solid var(--border)}.toolbar{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:15px}.filtersearch{display:flex;align-items:center;gap:9px;flex:1 1 270px;background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:0 13px}.filtersearch input{height:43px;background:none;border:0;outline:0;color:var(--text);width:100%;font-size:12px}.toolbar select{background:var(--surface);color:var(--text);border:1px solid var(--border);border-radius:12px;padding:0 12px;font-size:12px}.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:17px}.filter{border:1px solid var(--border);background:none;color:var(--muted);border-radius:30px;padding:8px 12px;font-size:10px;font-weight:700}.filter.active,.filter:hover{background:var(--brand);color:#05251f;border-color:var(--brand)}.count{color:var(--muted);font-size:11px;margin:0 0 13px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.card{border:1px solid var(--border);border-radius:17px;background:var(--surface);padding:17px;display:flex;flex-direction:column;min-height:218px;transition:.2s}.cardtop{display:flex;justify-content:space-between;align-items:center;margin-bottom:13px}.logo{width:42px;height:42px;border-radius:12px;background:var(--surface2);color:var(--brand);display:grid;place-items:center;font:700 15px "Space Grotesk"}.card h3{font:600 16px "Space Grotesk";margin:0 0 6px}.card p{font-size:11px;line-height:1.65;color:var(--muted);margin:0 0 13px}.meta{display:flex;gap:6px;flex-wrap:wrap;margin-top:auto}.tag{border:1px solid var(--border);border-radius:25px;padding:5px 8px;color:var(--muted);font-size:9px}.cardfoot{display:flex;justify-content:space-between;align-items:center;gap:8px;border-top:1px solid var(--border);padding-top:12px;margin-top:13px}.cardfoot small{font-size:9px;color:var(--subtle)}.details{border:0;background:none;color:var(--mint);font-size:10px;font-weight:800}.recent{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.recent article{display:flex;gap:12px;align-items:center;border:1px solid var(--border);border-radius:14px;padding:14px;background:var(--surface)}.recent strong{display:block;font-size:11px}.recent small{display:block;color:var(--muted);font-size:10px}footer{border-top:1px solid var(--border);padding:42px 0 20px}.footgrid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:30px;padding-bottom:30px}.footgrid p,.footgrid a{color:var(--muted);font-size:11px}.footgrid a{display:block;margin:8px 0}.footgrid a:hover{color:var(--brand)}.footgrid h4{font-size:12px}.footbottom{border-top:1px solid var(--border);padding-top:16px;display:flex;justify-content:space-between;gap:15px;color:var(--subtle);font-size:10px}.modalback{display:none;position:fixed;inset:0;z-index:50;background:#000a;backdrop-filter:blur(6px);padding:20px;align-items:center;justify-content:center}.modalback.open{display:flex}.modal{width:min(520px,100%);padding:24px;border:1px solid var(--border);border-radius:20px;background:var(--elev);box-shadow:var(--shadow)}.modalhead{display:flex;justify-content:space-between;gap:12px}.modal h2{font:700 24px "Space Grotesk";margin:3px 0}.modal p{font-size:12px;color:var(--muted);line-height:1.7}.modalgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px;background:var(--surface);padding:14px;border-radius:13px;margin:16px 0}.modalgrid small{display:block;font-size:9px;color:var(--subtle)}.modalgrid strong{font-size:11px}.modalactions{display:flex;gap:9px}.ghost{border:1px solid var(--border);background:var(--surface2);color:var(--text);border-radius:30px;padding:10px 15px;font-weight:700;font-size:11px}.empty{display:none;padding:40px;text-align:center;color:var(--muted);border:1px dashed var(--border);border-radius:15px}.empty h3{color:var(--text)}@media(max-width:950px){.catgrid{grid-template-columns:repeat(3,1fr)}.grid{grid-template-columns:repeat(2,1fr)}.heroart{transform:scale(.85)}}@media(max-width:700px){.wrap{width:calc(100% - 32px)}.nav{height:66px}.mobile{display:grid}nav{display:none;position:absolute;top:66px;left:0;right:0;background:var(--elev);border-bottom:1px solid var(--border);padding:10px 16px 16px;flex-direction:column;align-items:stretch}nav.open{display:flex}.hero{padding:52px 0 38px}.herogrid{display:block}.hero h1{font-size:clamp(38px,11vw,54px);letter-spacing:-2px}.heroart{height:195px;transform:scale(.78)}main section{padding:50px 0}.heading{align-items:start;flex-direction:column}.catgrid{grid-template-columns:repeat(2,1fr)}.collections,.grid,.recent{grid-template-columns:1fr}.footgrid{grid-template-columns:1fr 1fr;gap:20px}.footbrand{grid-column:1/-1}.footbottom{flex-direction:column}}@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
- .skip-link{position:absolute;left:12px;top:-60px;z-index:100;padding:10px 14px;background:var(--brand);color:#05251f;border-radius:9px;font-weight:800}.skip-link:focus{top:12px}.sr-only{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}.notice{padding:13px 15px;border:1px solid var(--border);border-radius:13px;background:var(--surface);color:var(--muted);font-size:11px;line-height:1.7;margin:0 0 17px}.notice strong{color:var(--text)}
-</style></head><body>
-<header><div class="wrap nav"><a class="brand" href="#home" aria-label="Lunivo home"><svg viewBox="0 0 48 48" fill="none"><path d="M5 12 22 3v31L5 43V12Z" fill="#14b8a6"/><path d="M43 12 26 3v31l17 9V12Z" fill="#a7f3d0"/><path d="M22 34V3l4 0v31l-4 0Z" fill="#0d9488"/></svg>lunivo<span style="color:var(--brand)">.</span></a><nav id="nav"><a class="active" href="#home">Home</a><a href="#discover">Discover</a><a href="#categories">Categories</a><a href="#collections">Collections</a><a href="#recent">Recently added</a><a href="#about">About</a></nav><button class="navbtn" id="theme" aria-label="Toggle theme">◐</button><button class="navbtn mobile" id="menu" aria-label="Toggle navigation" aria-expanded="false">☰</button></div></header>
-<a class="skip-link" href="#discover">Skip to directory</a><main><section class="hero" id="home"><div class="wrap herogrid"><div><div class="eyebrow">The open knowledge directory</div><h1>A world of knowledge,<br>one place to <span>explore.</span></h1><p class="intro">Discover educational websites, digital libraries, research platforms and learning resources from around the world — thoughtfully brought together.</p><form class="search" id="heroForm"><span aria-hidden="true">⌕</span><label class="sr-only" for="heroQ">Search resources</label><input id="heroQ" type="search" placeholder="Search websites, topics or resources…"><button>Explore ↗</button></form><div class="popular"><b>Popular:</b><button class="pill" data-q="digital libraries">Digital libraries</button><button class="pill" data-q="online courses">Online courses</button><button class="pill" data-q="research">Research</button><button class="pill" data-q="science">Science</button></div></div><div class="heroart" aria-hidden="true"><div class="orbit"></div><div class="book"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2.7"><path d="M10 25c14-7 27-5 40 4v48c-13-9-26-11-40-4V25Zm80 0c-14-7-27-5-40 4v48c13-9 26-11 40-4V25ZM50 29v48"/></svg></div></div></div></section>
-<section class="cats" id="categories"><div class="wrap catgrid"><button class="cat" data-cat="Education"><span class="glyph">⌂</span><strong>Education</strong><small>School and higher education resources</small></button><button class="cat" data-cat="Libraries"><span class="glyph">▤</span><strong>Libraries</strong><small>Digital libraries and open collections</small></button><button class="cat" data-cat="Research"><span class="glyph">⚗</span><strong>Research</strong><small>Journals, databases and academic tools</small></button><button class="cat" data-cat="Learning"><span class="glyph">▷</span><strong>Learning</strong><small>Online courses and learning platforms</small></button><button class="cat" data-cat="All"><span class="glyph">⌗</span><strong>All subjects</strong><small>Explore resources across disciplines</small></button></div></section>
-<section id="collections"><div class="wrap"><div class="heading"><div><div class="kicker">Curated for discovery</div><h2>Explore collections</h2><p>Curated pathways through selected parts of the directory.</p></div><a class="link" href="#discover">Browse directory →</a></div><div class="collections"><a class="collection" href="#discover" data-collection="academic"><span class="glyph">▤</span><h3>Academic essentials</h3><p>Useful platforms for school and higher education.</p></a><a class="collection" href="#discover" data-collection="science"><span class="glyph">⚗</span><h3>Science & technology</h3><p>Discover science, engineering and technology resources.</p></a><a class="collection" href="#discover" data-collection="open"><span class="glyph">◎</span><h3>Open knowledge</h3><p>Explore freely accessible knowledge and learning.</p></a></div></div></section>
-<section class="directory" id="discover"><div class="wrap"><div class="heading"><div><div class="kicker">The directory</div><h2>Find your next resource.</h2><p>Browse resources collected from the original library directory and institutional resource lists.</p></div><span class="tag" id="resourceTotal">Resources</span></div><div class="toolbar"><label class="filtersearch"><span>⌕</span><span class="sr-only">Search resources</span><input id="q" type="search" placeholder="Search by name, subject or keyword…"></label><select id="sort" aria-label="Sort"><option value="featured">Sort: Featured</option><option value="az">Name: A–Z</option><option value="za">Name: Z–A</option></select></div><div class="filters" id="filters"><button class="filter active" data-filter="All">All resources</button><button class="filter" data-filter="Education">Education</button><button class="filter" data-filter="Libraries">Libraries</button><button class="filter" data-filter="Research">Research</button><button class="filter" data-filter="Learning">Learning</button><button class="filter" data-filter="Science">Science</button></div><div class="notice"><strong>Independent directory.</strong> Resource descriptions are editorial summaries. Access conditions and availability are controlled by each external provider. Entries marked “Needs verification” are retained from legacy directories and have not been confirmed as current.</div><p class="count" id="count" aria-live="polite"></p><div class="grid" id="grid"></div><div class="empty" id="empty"><h3>No resources found</h3><p>Try another keyword or clear filters.</p><button class="ghost" id="clear">Clear filters</button></div></div></section>
-<section id="recent"><div class="wrap"><div class="heading"><div><div class="kicker">More to explore</div><h2>Across the knowledge landscape</h2><p>Selected additions from educational-resource collections.</p></div></div><div class="recent" id="recentGrid"></div></div></section></main>
-<footer id="about"><div class="wrap"><div class="footgrid"><div class="footbrand"><a class="brand" href="#home">◧ lunivo<span style="color:var(--brand)">.</span></a><p>An independent educational directory. Lunivo is not affiliated with CBSE, NCERT, or any listed institution or service.</p></div><div><h4>Discover</h4><a href="#discover">All resources</a><a href="#categories">Categories</a><a href="#collections">Collections</a><a href="#recent">More resources</a></div><div><h4>About</h4><a href="#about">About Lunivo</a><a href="#about">Editorial approach</a><a href="#about">External links</a></div><div><h4>Contribute</h4><a href="https://github.com/kr-ndv/lunivo/issues/new?title=Suggest%20a%20resource" target="_blank" rel="noopener noreferrer">Suggest a resource ↗</a><a href="https://github.com/kr-ndv/lunivo/issues/new?title=Report%20a%20broken%20link" target="_blank" rel="noopener noreferrer">Report a link ↗</a></div></div><div class="footbottom"><span>© <span id="year"></span> Lunivo. Independent educational directory.</span><span>External websites are operated by their respective owners.</span></div></div></footer>
-<div class="modalback" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modal"><div class="modalhead"><div><div class="kicker">Resource overview</div><h2 id="modalTitle"></h2></div><button class="ghost" id="close">✕</button></div><p id="modalDesc"></p><div class="modalgrid"><div><small>Category</small><strong id="modalCat"></strong></div><div><small>Subjects</small><strong id="modalSub"></strong></div><div><small>Access</small><strong id="modalAccess"></strong></div><div><small>Website</small><strong id="modalDomain"></strong></div><div style="grid-column:1/-1"><small>Listing source</small><strong id="modalSource"></strong></div></div><p>Continuing opens an external website operated by its respective organisation. Lunivo does not control its content or availability.</p><div class="modalactions"><a class="primary" id="visit" target="_blank" rel="noopener noreferrer">Visit website ↗</a><button class="ghost" id="close2">Close</button></div></div></div><div class="toast" id="toast" role="status"></div>
-<script>
-/* Directory data: transcribed from the original CBSE Library external-link menu, with additional current destinations sourced from institutional education-resource lists. Legacy/unclear entries are explicitly marked. */
-const resources=[
-{id:"cbse",name:"CBSE Academic",url:"https://cbseacademic.nic.in/",category:"Education",description:"Academic resources, curriculum, circulars, sample papers and educational publications.",subjects:["School education","Curriculum"],access:"Free",region:"India",level:"School",initials:"CB",source:"Original directory",featured:true},
-{id:"ncert",name:"NCERT",url:"https://ncert.nic.in/",category:"Education",description:"National educational research, curriculum, textbooks and learning resources.",subjects:["School education","Science","Humanities"],access:"Free",region:"India",level:"School",initials:"NC",source:"Original directory",featured:true},
-{id:"moe",name:"Ministry of Education",url:"https://www.education.gov.in/",category:"Education",description:"Official policies, programmes and initiatives of India's Ministry of Education; replaces the legacy MHRD label.",subjects:["Education policy"],access:"Free",region:"India",level:"General",initials:"MoE",source:"Updated official destination",featured:true},
-{id:"cbse-news",name:"CBSE News Digest (legacy listing)",url:"https://cbseacademic.nic.in/",category:"Education",description:"A legacy link label from the original directory. The exact digest destination could not be confirmed; this currently points to the CBSE Academics portal as a starting point only.",subjects:["School education","News"],access:"Free",region:"India",level:"School",initials:"CBN",source:"Original CBSE Library directory; exact destination unverified",needsReview:true},
-{id:"diksha",name:"DIKSHA",url:"https://diksha.gov.in/",category:"Learning",description:"National school-education platform with digital textbooks, videos, interactive content, courses and resources from NCERT, CBSE and State/UT boards.",subjects:["School education","Digital learning","Teacher development"],access:"Free",region:"India",level:"School",initials:"DIK",source:"Official DIKSHA portal",featured:true},
-{id:"rashtriya-epustakalaya",name:"Rashtriya e-Pustakalaya",url:"https://ndl.education.gov.in/",category:"Libraries",description:"Ministry of Education digital library offering curated books and reading material for children and young adults across age groups.",subjects:["Books","Reading","Children's literature"],access:"Free",region:"India",level:"Children · Young adults",initials:"ReP",source:"Official Ministry of Education platform",featured:true},
-{id:"egyankosh",name:"e-GyanKosh",url:"https://egyankosh.ac.in/",category:"Libraries",description:"Digital repository of learning resources associated with IGNOU.",subjects:["Distance learning","Humanities"],access:"Open access",region:"India",level:"Higher education",initials:"eG",source:"Original directory",featured:true},
-{id:"dli",name:"Digital Library of India",url:"https://www.dli.ernet.in/",category:"Libraries",description:"Legacy Digital Library of India destination from the original list. Current availability and successor status need confirmation.",subjects:["Books","Archives"],access:"Unverified",region:"India",level:"General",initials:"DLI",source:"Original directory",needsReview:true},
-{id:"nsdl",name:"National Science Digital Library",url:"https://www.niscpr.res.in/",category:"Science",description:"Historical NSDL listing. This link points to CSIR-NIScPR as a related institutional portal, not a confirmed NSDL replacement.",subjects:["Science","Research"],access:"Review required",region:"India",level:"General",initials:"NSDL",source:"Original directory",needsReview:true},
-{id:"cenbosec",name:"CENBOSEC",url:"https://cbseacademic.nic.in/cenbosec.html",category:"Education",description:"CBSE CENBOSEC publication collection on the academic website.",subjects:["Education","Publications"],access:"Free",region:"India",level:"School",initials:"CE",source:"Original directory and current CBSE academic portal"},
-{id:"icdl",name:"International Children's Digital Library",url:"https://www.childrenslibrary.org/",category:"Libraries",description:"Historical children's digital-library destination. Current site availability should be checked.",subjects:["Children's literature","Languages"],access:"Unverified",region:"Global",level:"Children",initials:"ICDL",source:"Original directory",needsReview:true},
-{id:"uslink",name:"US Link",url:"https://www.usa.gov/",category:"Education",description:"The source page labels this only as “US Link”; the intended destination is unclear. A general US government information portal is provisional.",subjects:["Reference"],access:"Free",region:"United States",level:"General",initials:"US",source:"Original directory; inferred target",needsReview:true},
-{id:"jstor",name:"JSTOR",url:"https://www.jstor.org/",category:"Research",description:"Digital library of academic journals, books and primary sources. Access varies by content and institution.",subjects:["Humanities","Social sciences"],access:"Mixed access",region:"Global",level:"Higher education",initials:"JS",source:"Original directory",featured:true},
-{id:"archive",name:"Internet Archive",url:"https://archive.org/",category:"Libraries",description:"Non-profit digital library providing access to books, media, websites and archived materials.",subjects:["Books","Media","History"],access:"Mixed access",region:"Global",level:"General",initials:"IA",source:"Original directory",featured:true},
-{id:"khan",name:"Khan Academy",url:"https://www.khanacademy.org/",category:"Learning",description:"Free lessons and practice across mathematics, science, computing, humanities and more.",subjects:["Mathematics","Science","Humanities"],access:"Free",region:"Global",level:"School · General",initials:"KA",source:"Original directory and institutional listings",featured:true},
-{id:"mit",name:"MIT OpenCourseWare",url:"https://ocw.mit.edu/",category:"Learning",description:"Open educational materials from a wide range of MIT courses.",subjects:["Science","Technology","Engineering"],access:"Open access",region:"Global",level:"Higher education",initials:"MIT",source:"Original directory and CSIR resource listing",featured:true},
-{id:"udl",name:"Universal Digital Library",url:"https://archive.org/",category:"Libraries",description:"Legacy name from the original page. Destination currently points to Internet Archive as a related archive, not a verified same service.",subjects:["Books","Archives"],access:"Mixed access",region:"Global",level:"General",initials:"UDL",source:"Original directory; destination needs review",needsReview:true},
-{id:"ndl",name:"National Digital Library of India",url:"https://ndl.iitkgp.ac.in/",category:"Libraries",description:"Educational resource discovery platform for students, teachers and lifelong learners.",subjects:["All subjects","Books","Learning"],access:"Mixed access",region:"India",level:"School · Higher education",initials:"NDLI",source:"Government and institutional OER listings",featured:true},
-{id:"nptel",name:"NPTEL",url:"https://nptel.ac.in/",category:"Learning",description:"Online courses and learning resources developed by Indian institutes of higher education.",subjects:["Engineering","Science","Technology"],access:"Free / mixed",region:"India",level:"Higher education",initials:"NPTEL",source:"Institutional e-resource lists"},
-{id:"swayam",name:"SWAYAM",url:"https://swayam.gov.in/",category:"Learning",description:"India's online learning platform offering courses across school and higher education.",subjects:["All subjects","Online courses"],access:"Free / mixed",region:"India",level:"School · Higher education",initials:"SW",source:"CSIR open-access resource list"},
-{id:"epathshala",name:"ePathshala",url:"https://epathshala.nic.in/",category:"Education",description:"NCERT digital platform for textbooks and educational resources.",subjects:["School education","Textbooks"],access:"Free",region:"India",level:"School",initials:"eP",source:"Institutional OER listings"},
-{id:"doaj",name:"Directory of Open Access Journals",url:"https://doaj.org/",category:"Research",description:"Index of peer-reviewed open-access scholarly journals from around the world.",subjects:["Research","All disciplines"],access:"Open access",region:"Global",level:"Research",initials:"DOAJ",source:"Institutional library listing"},
-{id:"shodhganga",name:"Shodhganga",url:"https://shodhganga.inflibnet.ac.in/",category:"Research",description:"Repository of Indian electronic theses and dissertations.",subjects:["Research","Higher education"],access:"Open access",region:"India",level:"Research",initials:"SG",source:"CSIR open-access resources"},
-{id:"vlabs",name:"Virtual Labs",url:"https://www.vlab.co.in/",category:"Science",description:"Web-enabled laboratory experiments and simulations for science and engineering learning.",subjects:["Science","Engineering"],access:"Free",region:"India",level:"School · Higher education",initials:"VL",source:"KVS digital resources"},
-{id:"epg",name:"e-PG Pathshala",url:"https://epgp.inflibnet.ac.in/",category:"Learning",description:"Postgraduate electronic learning content and resources across academic subjects.",subjects:["Higher education","All disciplines"],access:"Open access",region:"India",level:"Postgraduate",initials:"PG",source:"KVS and CSIR resource lists"},
-{id:"swayamprabha",name:"SWAYAM Prabha",url:"https://www.swayamprabha.gov.in/",category:"Learning",description:"Educational television and digital learning channels offering educational programmes.",subjects:["Education","Multimedia"],access:"Free",region:"India",level:"School · Higher education",initials:"SP",source:"Institutional e-resource listings"},
-{id:"olabs",name:"OLabs — Online Labs",url:"https://www.olabs.edu.in/",category:"Science",description:"Interactive online laboratory experiments for school-level science and mathematics.",subjects:["Science","Mathematics"],access:"Free",region:"India",level:"School",initials:"OL",source:"KVS digital resources"},
-{id:"nroer",name:"National Repository of Open Educational Resources",url:"https://nroer.gov.in/",category:"Education",description:"Open educational resources associated with India's school education ecosystem. Portal availability needs verification.",subjects:["School education","Open resources"],access:"Review required",region:"India",level:"School",initials:"NROER",source:"Institutional e-resource listing",needsReview:true},
-{id:"openstax",name:"OpenStax",url:"https://openstax.org/",category:"Libraries",description:"Free, openly licensed textbooks for school and higher education.",subjects:["Science","Mathematics","Humanities"],access:"Open access",region:"Global",level:"School · Higher education",initials:"OS",source:"Additional educational directory research"},
-{id:"arxiv",name:"arXiv",url:"https://arxiv.org/",category:"Research",description:"Open-access archive of scholarly articles in physics, mathematics, computer science and related fields.",subjects:["Science","Mathematics","Technology"],access:"Open access",region:"Global",level:"Research",initials:"arXiv",source:"Additional educational directory research"}
-];
-const q=s=>document.querySelector(s),qa=s=>[...document.querySelectorAll(s)],state={query:"",category:"All",sort:"featured",collection:""};
-const collectionIds={academic:["cbse","ncert","diksha","rashtriya-epustakalaya","egyankosh","khan","epathshala","swayam"],science:["mit","nptel","vlabs","olabs","arxiv","nsdl"],open:["archive","jstor","ndl","doaj","shodhganga","openstax","egyankosh"]};
-function safe(v){return String(v).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
-function render(){let items=resources.filter(r=>{let t=[r.name,r.description,r.category,r.subjects.join(" "),r.region,r.access].join(" ").toLowerCase();return(!state.query||t.includes(state.query.toLowerCase()))&&(state.category==="All"||r.category===state.category)&&(!state.collection||collectionIds[state.collection]?.includes(r.id))});if(state.sort==="az")items.sort((a,b)=>a.name.localeCompare(b.name));if(state.sort==="za")items.sort((a,b)=>b.name.localeCompare(a.name));if(state.sort==="featured")items.sort((a,b)=>Number(!!b.featured)-Number(!!a.featured)||a.name.localeCompare(b.name));q("#grid").innerHTML=items.map(r=>'<article class="card"><div class="cardtop"><span class="logo">'+safe(r.initials)+'</span><span class="tag">'+safe(r.category)+'</span></div><h3>'+safe(r.name)+'</h3><p>'+safe(r.description)+'</p><div class="meta"><span class="tag">'+safe(r.access)+'</span><span class="tag">'+safe(r.region)+'</span>'+(r.needsReview?'<span class="tag">Needs verification</span>':'')+'</div><div class="cardfoot"><small>'+safe(r.level)+'</small><button class="details" data-id="'+safe(r.id)+'">Details ↗</button></div></article>').join("");q("#count").textContent=items.length+" resources shown"+(state.collection?" · "+({academic:"Academic essentials",science:"Science & technology",open:"Open knowledge"}[state.collection]):"");q("#resourceTotal").textContent=resources.length+" resources";q("#empty").style.display=items.length?"none":"block";q("#grid").style.display=items.length?"grid":"none";}
-function query(v,scroll=false){state.query=v.trim();q("#q").value=v;q("#heroQ").value=v;render();if(scroll)q("#discover").scrollIntoView({behavior:"smooth"});}
-q("#heroForm").addEventListener("submit",e=>{e.preventDefault();query(q("#heroQ").value,true)});q("#q").addEventListener("input",e=>query(e.target.value));q("#sort").addEventListener("change",e=>{state.sort=e.target.value;render()});
-q("#filters").addEventListener("click",e=>{let b=e.target.closest("[data-filter]");if(!b)return;state.collection="";state.category=b.dataset.filter;qa(".filter").forEach(x=>x.classList.toggle("active",x===b));render()});
-qa("[data-cat]").forEach(b=>b.addEventListener("click",()=>{state.collection="";state.category=b.dataset.cat;qa(".filter").forEach(x=>x.classList.toggle("active",x.dataset.filter===state.category));render();q("#discover").scrollIntoView({behavior:"smooth"})}));
-qa("[data-q]").forEach(b=>b.addEventListener("click",()=>query(b.dataset.q,true)));
-qa("[data-collection]").forEach(b=>b.addEventListener("click",()=>{state.collection=b.dataset.collection;state.category="All";state.query="";q("#q").value=q("#heroQ").value="";q("#sort").value="featured";state.sort="featured";qa(".filter").forEach(x=>x.classList.toggle("active",x.dataset.filter==="All"));render();q("#discover").scrollIntoView({behavior:"smooth"});}));
-q("#clear").addEventListener("click",()=>{state.query="";state.category="All";state.sort="featured";state.collection="";q("#q").value=q("#heroQ").value="";q("#sort").value="featured";qa(".filter").forEach(x=>x.classList.toggle("active",x.dataset.filter==="All"));render()});
-let lastFocused=null;function openDetail(id){let r=resources.find(x=>x.id===id);if(!r)return;lastFocused=document.activeElement;q("#modalTitle").textContent=r.name;q("#modalDesc").textContent=r.description;q("#modalCat").textContent=r.category;q("#modalSub").textContent=r.subjects.join(", ");q("#modalAccess").textContent=r.access+(r.needsReview?" · Review needed":"");q("#modalDomain").textContent=new URL(r.url).hostname;q("#modalSource").textContent=r.source||"Lunivo directory";q("#visit").href=r.url;q("#modal").classList.add("open");q("#close").focus()}
-function close(){ q("#modal").classList.remove("open");if(lastFocused?.focus)lastFocused.focus() }q("#grid").addEventListener("click",e=>{let b=e.target.closest("[data-id]");if(b)openDetail(b.dataset.id)});q("#close").addEventListener("click",close);q("#close2").addEventListener("click",close);q("#modal").addEventListener("click",e=>{if(e.target.id==="modal")close()});document.addEventListener("keydown",e=>{if(!q("#modal").classList.contains("open"))return;if(e.key==="Escape")close();if(e.key==="Tab"){let nodes=[...q("#modal").querySelectorAll("a[href],button:not([disabled])")];let first=nodes[0],last=nodes[nodes.length-1];if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus()}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus()}}});
-function setTheme(t){document.documentElement.dataset.theme=t;q("#theme").setAttribute("aria-pressed",String(t==="light"));q("#theme").setAttribute("aria-label","Switch to "+(t==="dark"?"light":"dark")+" theme")}q("#theme").addEventListener("click",()=>{let t=document.documentElement.dataset.theme==="dark"?"light":"dark";setTheme(t);try{localStorage.setItem("lunivo-theme",t)}catch{}});try{setTheme(localStorage.getItem("lunivo-theme")||"dark")}catch{setTheme("dark")}
-q("#menu").addEventListener("click",()=>{let open=q("#nav").classList.toggle("open");q("#menu").setAttribute("aria-expanded",String(open))});qa("nav a").forEach(a=>a.addEventListener("click",()=>{q("#nav").classList.remove("open");q("#menu").setAttribute("aria-expanded","false")}));
-q("#recentGrid").innerHTML=resources.filter(r=>["ndl","nptel","doaj","swayam","epathshala","shodhganga"].includes(r.id)).map(r=>'<article><span class="logo">'+safe(r.initials)+'</span><div><strong>'+safe(r.name)+'</strong><small>'+safe(r.category)+' · '+safe(r.region)+'</small></div></article>').join("");q("#year").textContent=new Date().getFullYear();render();
-</script></body></html>
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1f1b">
+  <meta name="description" content="Lunivo is an independent directory of educational websites, digital libraries, research tools and learning resources.">
+  <meta property="og:title" content="Lunivo | Open learning directory">
+  <meta property="og:description" content="Find educational websites, digital libraries, research tools and learning resources from India and around the world.">
+  <meta property="og:type" content="website">
+  <meta name="color-scheme" content="dark light">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <title>Lunivo | Open learning directory</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0b1f1b;
+      --surface: #102923;
+      --surface-raised: #15352d;
+      --surface-soft: #1a4036;
+      --text: #f3faf6;
+      --muted: #b7cbc2;
+      --quiet: #9ab2a7;
+      --border: #6a8b7f;
+      --accent: #5dd6c5;
+      --accent-ink: #09231f;
+      --focus: #73e4d4;
+      --shadow: 0 16px 40px #0003;
+    }
+    html[data-theme="light"] {
+      color-scheme: light;
+      --bg: #f3f8f5;
+      --surface: #ffffff;
+      --surface-raised: #e8f1ec;
+      --surface-soft: #dcebe4;
+      --text: #142b24;
+      --muted: #4b6258;
+      --quiet: #536a60;
+      --border: #708579;
+      --accent: #087467;
+      --accent-ink: #ffffff;
+      --focus: #087b6d;
+      --shadow: 0 14px 34px #153d2b12;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      min-width: 320px;
+      background: var(--bg);
+      color: var(--text);
+      font: 15px/1.6 Inter, system-ui, sans-serif;
+    }
+    a { color: inherit; text-decoration: none; }
+    button, input, select { font: inherit; }
+    a[href], button, summary, select, label[for],
+    label:has(> input[type="checkbox"], > input[type="radio"]) { cursor: pointer; }
+    input[type="search"], input[type="text"], textarea { cursor: text; }
+    :disabled, [aria-disabled="true"] { cursor: not-allowed; }
+    button:disabled, select:disabled { opacity: .55; }
+    button:not(:disabled):active, a[href]:active { transform: translateY(1px); }
+    button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible, summary:focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 3px;
+    }
+    button { color: inherit; }
+    .wrap { width: min(1180px, calc(100% - 48px)); margin: 0 auto; }
+    .skip-link {
+      position: fixed; top: -70px; left: 16px; z-index: 100;
+      padding: 10px 15px; border-radius: 8px; background: var(--accent);
+      color: var(--accent-ink); font-weight: 700;
+    }
+    .skip-link:focus { top: 12px; }
+    .sr-only {
+      position: absolute !important; width: 1px; height: 1px; padding: 0; margin: -1px;
+      overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
+    }
+    header {
+      position: sticky; top: 0; z-index: 20;
+      background: var(--bg); border-bottom: 1px solid var(--border);
+    }
+    .nav { min-height: 72px; display: flex; align-items: center; gap: 22px; }
+    .brand { display: inline-flex; align-items: center; min-height: 44px; gap: 9px; flex: 0 0 auto; font: 700 25px/1 "Space Grotesk", Inter, sans-serif; letter-spacing: -1px; }
+    .brand svg { width: 36px; height: 36px; flex: 0 0 auto; }
+    .brand-dot { color: var(--accent); }
+    nav { display: flex; align-items: center; gap: 5px; margin-left: auto; }
+    nav a, .nav-control {
+      display: inline-flex; align-items: center; justify-content: center; min-height: 44px;
+      padding: 9px 12px; border: 0; border-radius: 9px; background: transparent;
+      color: var(--muted); font-size: 12px; font-weight: 700;
+    }
+    nav a:hover, nav a:focus-visible { background: var(--surface-raised); color: var(--text); }
+    .nav-control { border: 1px solid var(--border); min-width: 44px; }
+    .nav-controls { display: flex; align-items: center; gap: 7px; }
+    .mobile-menu { display: none; }
+    .hero { padding: 76px 0 65px; border-bottom: 1px solid var(--border); }
+    .hero-layout { display: grid; grid-template-columns: minmax(0, 1.12fr) minmax(260px, .88fr); gap: 54px; align-items: center; }
+    .hero-kicker { margin: 0; color: var(--accent); font-size: 11px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+    h1, h2, h3 { font-family: "Space Grotesk", Inter, sans-serif; }
+    h1 { max-width: 760px; margin: 15px 0 18px; font-size: clamp(42px, 5.4vw, 68px); line-height: 1.04; letter-spacing: -2.6px; }
+    h1 span { color: var(--accent); }
+    .hero-copy { max-width: 630px; margin: 0 0 27px; color: var(--muted); font-size: 15px; line-height: 1.8; }
+    .hero-search { max-width: 680px; padding: 15px; border: 1px solid var(--border); border-radius: 15px; background: var(--surface); }
+    .hero-search label { display: block; margin: 0 0 8px; color: var(--muted); font-size: 11px; font-weight: 700; }
+    .search-row { display: flex; gap: 9px; }
+    .search-row input, .filter-control select {
+      min-width: 0; width: 100%; min-height: 46px; padding: 10px 12px;
+      border: 1px solid var(--border); border-radius: 8px; background: var(--bg); color: var(--text);
+    }
+    input::placeholder { color: var(--quiet); opacity: 1; }
+    .primary {
+      min-height: 46px; padding: 10px 16px; border: 1px solid var(--accent);
+      border-radius: 8px; background: var(--accent); color: var(--accent-ink);
+      font-size: 12px; font-weight: 800; white-space: nowrap;
+    }
+    .primary:hover { filter: brightness(1.08); }
+    .popular { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: 15px; }
+    .popular-label { color: var(--quiet); font-size: 11px; }
+    .query-chip {
+      min-height: 44px; padding: 8px 11px; border: 1px solid var(--border);
+      border-radius: 7px; background: transparent; color: var(--muted); font-size: 11px;
+    }
+    .query-chip:hover { border-color: var(--accent); color: var(--text); }
+    .hero-mark { min-height: 270px; display: grid; place-items: center; position: relative; }
+    .open-page-art { width: min(100%, 350px); height: auto; overflow: visible; }
+    .category-section { padding: 30px 0 28px; }
+    .section-intro { margin-bottom: 17px; }
+    .section-intro h2 { margin: 0 0 5px; font-size: 22px; letter-spacing: -.6px; }
+    .section-intro p { margin: 0; color: var(--muted); font-size: 12px; }
+    .category-list { display: flex; flex-wrap: wrap; gap: 9px; }
+    .category-choice {
+      min-height: 44px; padding: 9px 14px; border: 1px solid var(--border);
+      border-radius: 8px; background: var(--surface); color: var(--muted);
+      font-size: 12px; font-weight: 650;
+    }
+    .category-choice:hover, .category-choice[aria-pressed="true"] {
+      border-color: var(--accent); background: var(--surface-soft); color: var(--text);
+    }
+    .collections-section { padding: 57px 0 62px; background: var(--surface); border-block: 1px solid var(--border); }
+    .collection-layout { display: grid; grid-template-columns: minmax(230px, .8fr) minmax(0, 1.2fr); gap: 46px; align-items: start; }
+    .collection-lead h2 { max-width: 370px; margin: 0 0 12px; font-size: clamp(27px, 3vw, 36px); line-height: 1.16; letter-spacing: -1.1px; }
+    .collection-lead p { max-width: 370px; margin: 0; color: var(--muted); font-size: 13px; }
+    .collection-feature {
+      margin-top: 22px; padding: 18px 20px; border-radius: 10px;
+      background: var(--surface-raised); border: 1px solid var(--border);
+    }
+    .collection-feature a { display: inline-flex; align-items: center; min-height: 44px; margin-top: 8px; color: var(--accent); font-size: 12px; font-weight: 800; }
+    .collection-feature strong { display: block; font: 600 17px "Space Grotesk", Inter, sans-serif; }
+    .collection-list { display: grid; grid-template-columns: 1fr 1fr; gap: 0 25px; }
+    .collection-link {
+      display: block; padding: 15px 0; border-top: 1px solid var(--border);
+    }
+    .collection-link strong { display: block; margin-bottom: 4px; font: 600 15px "Space Grotesk", Inter, sans-serif; }
+    .collection-link span { display: block; color: var(--muted); font-size: 11px; line-height: 1.55; }
+    .collection-link:hover strong { color: var(--accent); }
+    .directory-section { padding: 64px 0 70px; }
+    .directory-heading { display: flex; justify-content: space-between; align-items: end; gap: 24px; margin-bottom: 22px; }
+    .directory-heading h2 { margin: 0 0 6px; font-size: clamp(28px, 3.2vw, 38px); letter-spacing: -1px; }
+    .directory-heading p { max-width: 650px; margin: 0; color: var(--muted); font-size: 12px; }
+    .total-count { flex: 0 0 auto; color: var(--muted); font-size: 12px; }
+    .notice {
+      margin-bottom: 18px; padding: 13px 15px; border: 1px solid var(--border);
+      border-radius: 9px; background: var(--surface); color: var(--muted); font-size: 11px; line-height: 1.65;
+    }
+    .notice strong { color: var(--text); }
+    .directory-search { display: grid; grid-template-columns: minmax(0, 1fr) 185px; gap: 12px; margin-bottom: 15px; }
+    .filter-control { display: block; min-width: 0; }
+    .filter-control > span { display: block; margin-bottom: 6px; color: var(--muted); font-size: 11px; font-weight: 700; }
+    .directory-search input { min-height: 46px; width: 100%; padding: 10px 13px; border: 1px solid var(--border); border-radius: 8px; background: var(--surface); color: var(--text); }
+    .filter-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 11px; margin-bottom: 18px; }
+    .filter-control select { display: block; min-height: 44px; font-size: 12px; }
+    .directory-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 9px; margin-bottom: 17px; }
+    .saved-toggle, .clear-button {
+      min-height: 44px; padding: 9px 13px; border: 1px solid var(--border);
+      border-radius: 8px; background: transparent; color: var(--muted); font-size: 11px; font-weight: 700;
+    }
+    .saved-toggle[aria-pressed="true"] { border-color: var(--accent); background: var(--surface-soft); color: var(--text); }
+    .clear-button:hover, .saved-toggle:hover { border-color: var(--accent); color: var(--text); }
+    .results-line { display: flex; justify-content: space-between; align-items: center; gap: 10px; margin: 0 0 13px; color: var(--muted); font-size: 11px; }
+    .results-line p { margin: 0; }
+    .resource-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 13px; }
+    .resource-card {
+      display: flex; flex-direction: column; min-width: 0; min-height: 250px;
+      padding: 17px; border: 1px solid var(--border); border-radius: 11px; background: var(--surface);
+    }
+    .resource-card:hover { border-color: var(--accent); }
+    .card-top { display: flex; justify-content: space-between; align-items: center; gap: 8px; margin-bottom: 14px; }
+    .resource-type { margin: 0; color: var(--quiet); font-size: 10px; font-weight: 700; }
+    .save-button {
+      min-width: 72px; min-height: 44px; padding: 8px 10px; border: 1px solid var(--border);
+      border-radius: 7px; background: transparent; color: var(--muted); font-size: 10px; font-weight: 700;
+    }
+    .save-button[aria-pressed="true"] { border-color: var(--accent); background: var(--surface-soft); color: var(--text); }
+    .resource-card h3 { margin: 0 0 7px; font-size: 17px; line-height: 1.25; letter-spacing: -.25px; }
+.resource-card h3 a { display: inline-flex; align-items: center; min-width: 44px; min-height: 44px; }
+    .resource-card h3 a:hover { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
+    .resource-card .description { margin: 0 0 14px; color: var(--muted); font-size: 11px; line-height: 1.65; }
+    .tag-list { display: flex; flex-wrap: wrap; gap: 6px; margin-top: auto; }
+    .tag { display: inline-flex; align-items: center; min-height: 25px; padding: 3px 7px; border: 1px solid var(--border); border-radius: 6px; color: var(--muted); font-size: 9px; }
+    .tag.status-review { border-style: dashed; color: var(--text); }
+    .card-footer { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-top: 14px; padding-top: 11px; border-top: 1px solid var(--border); }
+    .card-footer small { color: var(--quiet); font-size: 10px; }
+    .card-actions { display: flex; gap: 7px; }
+    .card-actions button, .card-actions a {
+      display: inline-flex; align-items: center; justify-content: center; min-height: 44px;
+      padding: 8px 10px; border: 1px solid var(--border); border-radius: 7px;
+      background: transparent; color: var(--text); font-size: 10px; font-weight: 750;
+    }
+    .card-actions button:hover, .card-actions a:hover { border-color: var(--accent); color: var(--accent); }
+    .card-actions a { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+    .card-actions a:hover { color: var(--accent-ink); filter: brightness(1.08); }
+    .directory-state { margin: 14px 0; padding: 22px; border: 1px solid var(--border); border-radius: 10px; background: var(--surface); }
+    .directory-state[hidden] { display: none; }
+    .directory-state strong { display: block; margin-bottom: 4px; font: 600 16px "Space Grotesk", Inter, sans-serif; }
+    .directory-state p { margin: 0; color: var(--muted); font-size: 12px; }
+    .directory-state button { min-height: 44px; margin-top: 12px; padding: 9px 12px; border: 1px solid var(--border); border-radius: 7px; background: var(--surface-raised); color: var(--text); font-size: 11px; font-weight: 700; }
+    .additions-section { padding: 55px 0 62px; background: var(--surface); border-top: 1px solid var(--border); }
+    .additions-heading { display: flex; justify-content: space-between; align-items: end; gap: 18px; margin-bottom: 18px; }
+    .additions-heading h2 { margin: 0 0 5px; font-size: 28px; letter-spacing: -.7px; }
+    .additions-heading p { margin: 0; color: var(--muted); font-size: 12px; }
+    .addition-list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px 22px; }
+    .addition-item { display: flex; flex-direction: column; padding: 12px 0; border-top: 1px solid var(--border); }
+    .addition-item a { display: flex; align-items: center; min-height: 44px; font: 600 14px "Space Grotesk", Inter, sans-serif; }
+    .addition-item a:hover { color: var(--accent); }
+    .addition-item small { margin-top: 3px; color: var(--muted); font-size: 10px; }
+    footer { padding: 46px 0 22px; border-top: 1px solid var(--border); }
+    .footer-layout { display: grid; grid-template-columns: minmax(240px, 1.3fr) 1fr 1fr; gap: 38px; padding-bottom: 28px; }
+    .footer-brand p, .footer-copy { max-width: 440px; color: var(--muted); font-size: 11px; line-height: 1.8; }
+    .footer-column h3 { margin: 5px 0 10px; font-size: 13px; }
+    .footer-column a { display: flex; align-items: center; width: fit-content; min-height: 44px; padding: 7px 0; color: var(--muted); font-size: 11px; }
+    .footer-column a:hover { color: var(--accent); }
+    .footer-bottom { display: flex; justify-content: space-between; gap: 16px; padding-top: 15px; border-top: 1px solid var(--border); color: var(--quiet); font-size: 10px; }
+    dialog {
+      width: min(560px, calc(100% - 32px)); max-height: min(88vh, 760px); overflow-y: auto;
+      padding: 24px; border: 1px solid var(--border); border-radius: 14px;
+      background: var(--surface); color: var(--text); box-shadow: var(--shadow);
+    }
+    dialog::backdrop { background: #000b; }
+    .dialog-header { display: flex; align-items: start; justify-content: space-between; gap: 15px; }
+    .dialog-header h2 { margin: 0; font-size: 25px; line-height: 1.2; }
+    .dialog-close { min-width: 44px; min-height: 44px; border: 1px solid var(--border); border-radius: 8px; background: var(--surface-raised); color: var(--text); font-size: 12px; }
+    .dialog-description { color: var(--muted); font-size: 13px; line-height: 1.75; }
+    .dialog-fields { display: grid; grid-template-columns: 1fr 1fr; gap: 0 15px; margin: 18px 0; padding: 12px 15px; border: 1px solid var(--border); border-radius: 9px; }
+    .dialog-field { padding: 10px 0; border-bottom: 1px solid var(--border); }
+    .dialog-field:nth-last-child(-n+2) { border-bottom: 0; }
+    .dialog-field dt { color: var(--quiet); font-size: 10px; }
+    .dialog-field dd { margin: 3px 0 0; font-size: 12px; font-weight: 650; overflow-wrap: anywhere; }
+    .dialog-note { color: var(--muted); font-size: 11px; line-height: 1.65; }
+    .dialog-actions { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 18px; }
+    .dialog-actions a, .dialog-actions button { min-height: 44px; display: inline-flex; align-items: center; justify-content: center; padding: 9px 13px; border: 1px solid var(--border); border-radius: 8px; font-size: 11px; font-weight: 750; }
+    .dialog-actions a { border-color: var(--accent); background: var(--accent); color: var(--accent-ink); }
+    .dialog-actions button { background: var(--surface-raised); color: var(--text); }
+    .toast { position: fixed; left: 50%; bottom: 20px; z-index: 60; max-width: calc(100% - 32px); transform: translateX(-50%); padding: 10px 15px; border: 1px solid var(--border); border-radius: 8px; background: var(--surface-raised); color: var(--text); box-shadow: var(--shadow); font-size: 11px; }
+    .toast[hidden] { display: none; }
+    @media (max-width: 980px) {
+      .hero-layout { gap: 28px; }
+      .resource-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .filter-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (max-width: 700px) {
+      .wrap { width: calc(100% - 32px); }
+      .nav { min-height: 64px; gap: 9px; }
+      .brand { font-size: 23px; }
+      .brand svg { width: 32px; height: 32px; }
+      .mobile-menu { display: inline-flex; }
+      nav {
+        display: none; position: absolute; top: 64px; left: 0; right: 0;
+        margin: 0; padding: 9px 16px 13px; border-bottom: 1px solid var(--border);
+        background: var(--bg); align-items: stretch; flex-direction: column;
+      }
+      nav.open { display: flex; }
+      nav a { justify-content: flex-start; }
+      .nav-controls { display: flex; gap: 7px; margin-left: auto; }
+      .hero { padding: 49px 0 42px; }
+      .hero-layout { display: block; }
+      h1 { font-size: clamp(39px, 10.7vw, 54px); letter-spacing: -1.8px; }
+      .hero-copy { font-size: 14px; }
+      .hero-mark { min-height: 170px; margin-top: 12px; }
+      .open-page-art { width: 230px; }
+      .category-section { padding: 26px 0; }
+      .collections-section { padding: 43px 0; }
+      .collection-layout { display: block; }
+      .collection-lead { margin-bottom: 24px; }
+      .collection-list { grid-template-columns: 1fr 1fr; gap: 0 16px; }
+      .directory-section { padding: 45px 0 52px; }
+      .directory-heading { align-items: start; flex-direction: column; gap: 8px; }
+      .directory-search { grid-template-columns: 1fr; }
+      .filter-grid { grid-template-columns: 1fr 1fr; }
+      .resource-grid { grid-template-columns: 1fr; }
+      .addition-list { grid-template-columns: 1fr 1fr; gap: 8px 15px; }
+      .footer-layout { grid-template-columns: 1fr 1fr; gap: 20px; }
+      .footer-brand { grid-column: 1 / -1; }
+      .footer-bottom { flex-direction: column; }
+    }
+    @media (max-width: 390px) {
+      .wrap { width: calc(100% - 26px); }
+      .search-row { flex-direction: column; }
+      .search-row .primary { width: 100%; }
+      .collection-list, .filter-grid, .addition-list { grid-template-columns: 1fr; }
+      .card-footer { align-items: flex-start; flex-direction: column; }
+      .card-actions { width: 100%; }
+      .card-actions > * { flex: 1; }
+      .footer-layout { grid-template-columns: 1fr; }
+      .footer-brand { grid-column: auto; }
+      .dialog-fields { grid-template-columns: 1fr; }
+      .dialog-field:nth-last-child(2) { border-bottom: 1px solid var(--border); }
+      .dialog-field:last-child { border-bottom: 0; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="#home" aria-label="Lunivo home">
+        <svg viewBox="0 0 48 48" aria-hidden="true" fill="none">
+          <path d="M5 12 22 3v31L5 43V12Z" fill="#14b8a6"/>
+          <path d="M43 12 26 3v31l17 9V12Z" fill="#a7f3d0"/>
+          <path d="M22 34V3h4v31h-4Z" fill="#0d9488"/>
+        </svg>
+        <span>lunivo<span class="brand-dot">.</span></span>
+      </a>
+      <nav id="siteNav" aria-label="Main navigation">
+        <a href="#directory">Directory</a>
+        <a href="#categories">Categories</a>
+        <a href="#collections">Collections</a>
+        <a href="#recent">Additions</a>
+        <a href="#about">About</a>
+      </nav>
+      <div class="nav-controls">
+        <button class="nav-control" id="themeToggle" type="button" aria-label="Switch to light theme" aria-pressed="false">Theme</button>
+        <button class="nav-control mobile-menu" id="menuToggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="siteNav">Menu</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" tabindex="-1">
+    <section class="hero" id="home">
+      <div class="wrap hero-layout">
+        <div>
+          <p class="hero-kicker">An independent learning index</p>
+          <h1>Find a place to <span>learn more.</span></h1>
+          <p class="hero-copy">A carefully organised directory of educational websites, digital libraries, research tools and learning resources from India and around the world.</p>
+          <form class="hero-search" id="heroSearchForm">
+            <label for="heroSearch">Search across the directory</label>
+            <div class="search-row">
+              <input id="heroSearch" type="search" placeholder="Try history, open textbooks or science">
+              <button class="primary" type="submit">Search resources</button>
+            </div>
+          </form>
+          <div class="popular" aria-label="Suggested searches">
+            <span class="popular-label">Try:</span>
+            <button class="query-chip" type="button" data-query="textbooks">Textbooks</button>
+            <button class="query-chip" type="button" data-query="history">History</button>
+            <button class="query-chip" type="button" data-query="research papers">Research papers</button>
+            <button class="query-chip" type="button" data-query="online courses">Online courses</button>
+          </div>
+        </div>
+        <div class="hero-mark" aria-hidden="true">
+          <svg class="open-page-art" viewBox="0 0 360 270" fill="none">
+            <path d="M35 142C64 74 130 35 180 53c50-18 116 21 145 89-31 62-85 93-145 72-60 21-114-10-145-72Z" stroke="#5dd6c5" stroke-width="1.5" opacity=".58"/>
+            <path d="M70 88c37-17 75-13 110 10v112c-35-23-73-27-110-10V88Z" fill="#15352d" stroke="#5dd6c5" stroke-width="2"/>
+            <path d="M290 88c-37-17-75-13-110 10v112c35-23 73-27 110-10V88Z" fill="#1a4036" stroke="#a7f3d0" stroke-width="2"/>
+            <path d="M180 98v112" stroke="#5dd6c5" stroke-width="2"/>
+            <path d="M91 116c19-6 38-5 57 4M91 139c19-6 38-5 57 4M91 162c19-6 38-5 57 4M269 116c-19-6-38-5-57 4M269 139c-19-6-38-5-57 4M269 162c-19-6-38-5-57 4" stroke="#b7cbc2" stroke-width="2" stroke-linecap="round" opacity=".8"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section class="category-section" id="categories" aria-labelledby="categoryTitle">
+      <div class="wrap">
+        <div class="section-intro">
+          <h2 id="categoryTitle">Browse by category</h2>
+          <p>Choose a subject area, then narrow the results with the filters below.</p>
+        </div>
+        <div class="category-list" id="categoryChoices">
+          <button class="category-choice" type="button" data-category="All" aria-pressed="true">All resources</button>
+          <button class="category-choice" type="button" data-category="Education" aria-pressed="false">Education</button>
+          <button class="category-choice" type="button" data-category="Libraries" aria-pressed="false">Libraries</button>
+          <button class="category-choice" type="button" data-category="Learning" aria-pressed="false">Learning</button>
+          <button class="category-choice" type="button" data-category="Research" aria-pressed="false">Research</button>
+          <button class="category-choice" type="button" data-category="Science" aria-pressed="false">Science</button>
+          <button class="category-choice" type="button" data-category="Culture & history" aria-pressed="false">Culture & history</button>
+          <button class="category-choice" type="button" data-category="Opportunities" aria-pressed="false">Opportunities</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="collections-section" id="collections" aria-labelledby="collectionsTitle">
+      <div class="wrap collection-layout">
+        <div class="collection-lead">
+          <h2 id="collectionsTitle">Start with a collection.</h2>
+          <p>Shortlists group resources around a practical goal. Each collection applies its own filter to the directory.</p>
+          <div class="collection-feature">
+            <strong>India learning shelf</strong>
+            <p>School resources, national learning platforms, libraries and academic initiatives from India.</p>
+            <a href="#directory" data-collection="india">View the India collection</a>
+          </div>
+        </div>
+        <div class="collection-list">
+          <a class="collection-link" href="#directory" data-collection="open-library">
+            <strong>Open libraries</strong><span>Books, textbooks, cultural collections and digital archives.</span>
+          </a>
+          <a class="collection-link" href="#directory" data-collection="research">
+            <strong>Research starting points</strong><span>Scholarly discovery, journals, theses and subject databases.</span>
+          </a>
+          <a class="collection-link" href="#directory" data-collection="science">
+            <strong>Science and computing</strong><span>Laboratory learning, technical courses and research tools.</span>
+          </a>
+          <a class="collection-link" href="#directory" data-collection="humanities">
+            <strong>Humanities and culture</strong><span>History, literature, archives, art and social sciences.</span>
+          </a>
+          <a class="collection-link" href="#directory" data-collection="school">
+            <strong>School learning</strong><span>School education, open schooling and learning materials.</span>
+          </a>
+          <a class="collection-link" href="#directory" data-collection="open-courses">
+            <strong>Open courses</strong><span>University course materials and self-paced learning.</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="directory-section" id="directory" aria-labelledby="directoryTitle">
+      <div class="wrap">
+        <div class="directory-heading">
+          <div>
+            <h2 id="directoryTitle">The resource directory</h2>
+            <p>Search by name or topic, then combine category, subject, region, education level and access filters.</p>
+          </div>
+          <span class="total-count" id="resourceTotal">Preparing catalogue</span>
+        </div>
+        <div class="notice"><strong>Independent directory.</strong> Lunivo does not own or operate listed websites. A source review records the reference checked during curation. It is not a live uptime check or a guarantee of access, licensing or availability. Legacy entries marked “Needs review” require a fresh destination check.</div>
+        <div class="directory-search">
+          <label class="filter-control" for="directorySearch"><span>Search resources</span><input id="directorySearch" type="search" placeholder="Name, subject, topic or keyword"></label>
+          <label class="filter-control" for="sortOrder"><span>Sort results</span><select id="sortOrder"><option value="featured">Featured first</option><option value="recent">Recently added</option><option value="az">Name A to Z</option><option value="za">Name Z to A</option></select></label>
+        </div>
+        <div class="filter-grid">
+          <label class="filter-control" for="subjectFilter"><span>Subject</span><select id="subjectFilter"><option value="">All subjects</option></select></label>
+          <label class="filter-control" for="regionFilter"><span>Region</span><select id="regionFilter"><option value="">All regions</option></select></label>
+          <label class="filter-control" for="levelFilter"><span>Education level</span><select id="levelFilter"><option value="">All levels</option></select></label>
+          <label class="filter-control" for="accessFilter"><span>Access</span><select id="accessFilter"><option value="">All access types</option></select></label>
+        </div>
+        <div class="directory-actions">
+          <button class="saved-toggle" id="savedToggle" type="button" aria-pressed="false">Saved resources (0)</button>
+          <button class="clear-button" id="clearFilters" type="button">Clear filters</button>
+        </div>
+        <div class="results-line">
+          <p id="resultCount" aria-live="polite">Loading resources...</p>
+          <p id="activeCollection" aria-live="polite"></p>
+        </div>
+        <div class="directory-state" id="loadingState" role="status"><strong>Preparing the directory</strong><p>Organising the catalogue for browsing.</p></div>
+        <div class="directory-state" id="errorState" role="alert" hidden><strong>The directory could not be displayed</strong><p>Reload the page to try again. The resource catalogue is stored with this site.</p><button id="reloadDirectory" type="button">Reload directory</button></div>
+        <div class="resource-grid" id="resourceGrid"></div>
+        <div class="directory-state" id="emptyState" hidden>
+          <strong id="emptyTitle">No matching resources</strong>
+          <p id="emptyText">Change a filter or search for another topic.</p>
+          <button id="emptyAction" type="button">Clear filters</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="additions-section" id="recent" aria-labelledby="recentTitle">
+      <div class="wrap">
+        <div class="additions-heading">
+          <div>
+            <h2 id="recentTitle">Recently added</h2>
+            <p>New entries added in this catalogue update.</p>
+          </div>
+          <a class="saved-toggle" href="#directory">Browse all resources</a>
+        </div>
+        <div class="addition-list" id="additionList"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="about">
+    <div class="wrap">
+      <div class="footer-layout">
+        <div class="footer-brand">
+          <a class="brand" href="#home" aria-label="Lunivo home">
+            <svg viewBox="0 0 48 48" aria-hidden="true" fill="none"><path d="M5 12 22 3v31L5 43V12Z" fill="#14b8a6"/><path d="M43 12 26 3v31l17 9V12Z" fill="#a7f3d0"/><path d="M22 34V3h4v31h-4Z" fill="#0d9488"/></svg>
+            <span>lunivo<span class="brand-dot">.</span></span>
+          </a>
+          <p>An independent directory for finding educational websites, digital libraries, research platforms and learning resources. Lunivo is not affiliated with CBSE, NCERT, the Ministry of Education or any listed institution or service.</p>
+        </div>
+        <div class="footer-column">
+          <h3>Browse</h3>
+          <a href="#directory">All resources</a>
+          <a href="#categories">Categories</a>
+          <a href="#collections">Collections</a>
+          <a href="#recent">Recently added</a>
+        </div>
+        <div class="footer-column">
+          <h3>Contribute</h3>
+          <a href="https://github.com/kr-ndv/lunivo/issues/new?title=Suggest%20a%20resource" target="_blank" rel="noopener noreferrer">Suggest a resource</a>
+          <a href="https://github.com/kr-ndv/lunivo/issues/new?title=Report%20a%20broken%20link" target="_blank" rel="noopener noreferrer">Report a broken link</a>
+          <a href="https://github.com/kr-ndv/lunivo">Lunivo on GitHub</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="currentYear"></span> Lunivo. Independent educational directory.</span>
+        <span>External websites are operated by their respective owners.</span>
+      </div>
+    </div>
+  </footer>
+
+  <dialog id="resourceDialog" aria-labelledby="dialogTitle">
+    <div class="dialog-header">
+      <div><p class="hero-kicker">Resource details</p><h2 id="dialogTitle"></h2></div>
+      <button class="dialog-close" id="dialogClose" type="button" aria-label="Close resource details">Close</button>
+    </div>
+    <p class="dialog-description" id="dialogDescription"></p>
+    <dl class="dialog-fields">
+      <div class="dialog-field"><dt>Category</dt><dd id="dialogCategory"></dd></div>
+      <div class="dialog-field"><dt>Resource type</dt><dd id="dialogType"></dd></div>
+      <div class="dialog-field"><dt>Subjects</dt><dd id="dialogSubjects"></dd></div>
+      <div class="dialog-field"><dt>Education level</dt><dd id="dialogLevel"></dd></div>
+      <div class="dialog-field"><dt>Region</dt><dd id="dialogRegion"></dd></div>
+      <div class="dialog-field"><dt>Access</dt><dd id="dialogAccess"></dd></div>
+      <div class="dialog-field"><dt>Source review</dt><dd id="dialogReview"></dd></div>
+      <div class="dialog-field"><dt>Listing source</dt><dd id="dialogSource"></dd></div>
+    </dl>
+    <p class="dialog-note">Access conditions can vary by resource, item, location, account or institution. Check the provider's own terms before relying on a particular item.</p>
+    <div class="dialog-actions">
+      <a id="dialogVisit" href="#" target="_blank" rel="noopener noreferrer">Visit official website</a>
+      <button id="dialogSave" type="button" aria-pressed="false">Save resource</button>
+    </div>
+  </dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true" hidden></div>
+
+  <script>
+    const resources = [
+      {id:"cbse",name:"CBSE Academic",url:"https://cbseacademic.nic.in/",category:"Education",type:"School education portal",description:"Academic resources, curriculum, circulars, sample papers and educational publications.",subjects:["School education","Curriculum"],access:"Free",region:"India",level:"School",initials:"CB",source:"Original CBSE Library directory",featured:true},
+      {id:"ncert",name:"NCERT",url:"https://ncert.nic.in/",category:"Education",type:"Education and curriculum portal",description:"National educational research, curriculum, textbooks and learning resources.",subjects:["School education","Science","Humanities"],access:"Free",region:"India",level:"School",initials:"NC",source:"Original CBSE Library directory",featured:true},
+      {id:"moe",name:"Ministry of Education",url:"https://www.education.gov.in/",category:"Education",type:"Government information portal",description:"Policies, programmes and initiatives of India's Ministry of Education. This is the current ministry destination for the legacy MHRD label.",subjects:["Education policy"],access:"Free",region:"India",level:"General",initials:"MoE",source:"Updated official destination",featured:true},
+      {id:"cbse-news",name:"CBSE News Digest (legacy listing)",url:"https://cbseacademic.nic.in/",category:"Education",type:"Legacy directory entry",description:"A legacy link label from the original directory. The exact digest destination could not be confirmed. This points to the CBSE Academics portal as a starting point only.",subjects:["School education","News"],access:"Free",region:"India",level:"School",initials:"CBN",source:"Original CBSE Library directory; exact destination unverified",needsReview:true},
+      {id:"diksha",name:"DIKSHA",url:"https://diksha.gov.in/",category:"Learning",type:"Digital learning platform",description:"National school-education platform with digital textbooks, videos, interactive content, courses and resources from NCERT, CBSE and State or UT boards.",subjects:["School education","Digital learning","Teacher development"],access:"Free resources",region:"India",level:"School",initials:"DIK",source:"Official DIKSHA portal",featured:true},
+      {id:"rashtriya-epustakalaya",name:"Rashtriya e-Pustakalaya",url:"https://ndl.education.gov.in/",category:"Libraries",type:"Digital book library",description:"Ministry of Education digital library offering curated books and reading material for children and young adults across age groups.",subjects:["Books","Reading","Children's literature"],access:"Free access; account conditions may apply",region:"India",level:"Children and young adults",initials:"ReP",source:"Official Ministry of Education platform",featured:true},
+      {id:"egyankosh",name:"e-GyanKosh",url:"https://egyankosh.ac.in/",category:"Libraries",type:"Academic repository",description:"Digital repository of learning resources associated with IGNOU.",subjects:["Distance learning","Humanities"],access:"Open access",region:"India",level:"Higher education",initials:"eG",source:"Original CBSE Library directory",featured:true},
+      {id:"dli",name:"Digital Library of India",url:"https://www.dli.ernet.in/",category:"Libraries",type:"Legacy digital library listing",description:"Legacy Digital Library of India destination from the original list. Current availability and successor status need confirmation.",subjects:["Books","Archives"],access:"Unverified",region:"India",level:"General",initials:"DLI",source:"Original CBSE Library directory",needsReview:true},
+      {id:"nsdl",name:"National Science Digital Library",url:"https://www.niscpr.res.in/",category:"Science",type:"Legacy science library listing",description:"Historical NSDL listing. This link points to CSIR-NIScPR as a related institutional portal, not a confirmed NSDL replacement.",subjects:["Science","Research"],access:"Review required",region:"India",level:"General",initials:"NSDL",source:"Original CBSE Library directory",needsReview:true},
+      {id:"cenbosec",name:"CENBOSEC",url:"https://cbseacademic.nic.in/cenbosec.html",category:"Education",type:"Education publication collection",description:"CBSE CENBOSEC publication collection on the academic website.",subjects:["Education","Publications"],access:"Free",region:"India",level:"School",initials:"CE",source:"Original directory and current CBSE academic portal"},
+      {id:"icdl",name:"International Children's Digital Library",url:"https://www.childrenslibrary.org/",category:"Libraries",type:"Legacy children's library listing",description:"Historical children's digital-library destination. Current site availability should be checked.",subjects:["Children's literature","Languages"],access:"Unverified",region:"Global",level:"Children",initials:"ICDL",source:"Original CBSE Library directory",needsReview:true},
+      {id:"uslink",name:"US Link (legacy label)",url:"https://www.usa.gov/",category:"Education",type:"Legacy directory entry",description:"The source page labels this only as “US Link”; the intended destination is unclear. A general US government information portal is provisional.",subjects:["Reference"],access:"Free",region:"United States",level:"General",initials:"US",source:"Original CBSE Library directory; inferred target",needsReview:true},
+      {id:"jstor",name:"JSTOR",url:"https://www.jstor.org/",category:"Research",type:"Academic research library",description:"Digital library of academic journals, books and primary sources. Access varies by content and institution.",subjects:["Humanities","Social sciences","History"],access:"Mixed access",region:"Global",level:"Higher education",initials:"JS",source:"Original CBSE Library directory",featured:true},
+      {id:"archive",name:"Internet Archive",url:"https://archive.org/",category:"Libraries",type:"Digital archive",description:"Non-profit digital library providing access to books, media, websites and archived materials.",subjects:["Books","Media","History"],access:"Mixed access",region:"Global",level:"General",initials:"IA",source:"Original CBSE Library directory",featured:true},
+      {id:"khan",name:"Khan Academy",url:"https://www.khanacademy.org/",category:"Learning",type:"Online learning platform",description:"Lessons and practice across mathematics, science, computing, humanities and more.",subjects:["Mathematics","Science","Humanities"],access:"Free learning resources",region:"Global",level:"School and general",initials:"KA",source:"Original CBSE Library directory and institutional listings",featured:true},
+      {id:"mit",name:"MIT OpenCourseWare",url:"https://ocw.mit.edu/",category:"Learning",type:"Open course materials",description:"Open educational materials from a wide range of MIT courses.",subjects:["Science","Technology","Engineering"],access:"Open access",region:"United States",level:"Higher education",initials:"MIT",source:"Original CBSE Library directory and CSIR resource listing",featured:true},
+      {id:"udl",name:"Universal Digital Library",url:"https://archive.org/",category:"Libraries",type:"Legacy digital library listing",description:"Legacy name from the original directory. The destination points to Internet Archive as a related archive, not a verified continuation of the same service.",subjects:["Books","Archives"],access:"Mixed access",region:"Global",level:"General",initials:"UDL",source:"Original CBSE Library directory; destination needs review",needsReview:true},
+      {id:"ndl",name:"National Digital Library of India",url:"https://ndl.iitkgp.ac.in/",category:"Libraries",type:"Learning resource discovery platform",description:"Educational resource discovery platform for students, teachers and lifelong learners.",subjects:["All subjects","Books","Learning"],access:"Mixed access",region:"India",level:"School and higher education",initials:"NDLI",source:"Government and institutional OER listings",featured:true},
+      {id:"nptel",name:"NPTEL",url:"https://nptel.ac.in/",category:"Learning",type:"Online course platform",description:"Online courses and learning resources developed by Indian institutes of higher education.",subjects:["Engineering","Science","Technology"],access:"Free learning; certificates may cost",region:"India",level:"Higher education",initials:"NPTEL",source:"Institutional e-resource lists"},
+      {id:"swayam",name:"SWAYAM",url:"https://swayam.gov.in/",category:"Learning",type:"Online course platform",description:"India's online learning platform offering courses across school and higher education.",subjects:["All subjects","Online courses"],access:"Free learning; fees may apply",region:"India",level:"School and higher education",initials:"SW",source:"CSIR open-access resource list"},
+      {id:"epathshala",name:"ePathshala",url:"https://epathshala.nic.in/",category:"Education",type:"Digital textbook platform",description:"NCERT digital platform for textbooks and educational resources.",subjects:["School education","Textbooks"],access:"Free",region:"India",level:"School",initials:"eP",source:"Institutional OER listings"},
+      {id:"doaj",name:"Directory of Open Access Journals",url:"https://doaj.org/",category:"Research",type:"Journal index",description:"Index of peer-reviewed open-access scholarly journals from around the world.",subjects:["Research","All disciplines","Journals"],access:"Open access directory",region:"Global",level:"Research",initials:"DOAJ",source:"Institutional library listing"},
+      {id:"shodhganga",name:"Shodhganga",url:"https://shodhganga.inflibnet.ac.in/",category:"Research",type:"Thesis repository",description:"Repository of Indian electronic theses and dissertations.",subjects:["Research","Higher education","Theses"],access:"Open access",region:"India",level:"Research",initials:"SG",source:"CSIR open-access resources"},
+      {id:"vlabs",name:"Virtual Labs",url:"https://www.vlab.co.in/",category:"Science",type:"Virtual laboratory platform",description:"Web-enabled laboratory experiments and simulations for science and engineering learning.",subjects:["Science","Engineering"],access:"Free",region:"India",level:"School and higher education",initials:"VL",source:"KVS digital resources"},
+      {id:"epg",name:"e-PG Pathshala",url:"https://epgp.inflibnet.ac.in/",category:"Learning",type:"Postgraduate learning materials",description:"Postgraduate electronic learning content and resources across academic subjects.",subjects:["Higher education","All disciplines"],access:"Open access",region:"India",level:"Postgraduate",initials:"PG",source:"KVS and CSIR resource lists"},
+      {id:"swayamprabha",name:"SWAYAM Prabha",url:"https://www.swayamprabha.gov.in/",category:"Learning",type:"Educational broadcast channels",description:"Educational television and digital learning channels offering educational programmes.",subjects:["Education","Multimedia"],access:"Free",region:"India",level:"School and higher education",initials:"SP",source:"Institutional e-resource listings"},
+      {id:"olabs",name:"OLabs - Online Labs",url:"https://www.olabs.edu.in/",category:"Science",type:"Virtual laboratory platform",description:"Interactive online laboratory experiments for school-level science and mathematics.",subjects:["Science","Mathematics"],access:"Free",region:"India",level:"School",initials:"OL",source:"KVS digital resources"},
+      {id:"nroer",name:"National Repository of Open Educational Resources",url:"https://nroer.gov.in/",category:"Education",type:"Open education repository",description:"Open educational resources associated with India's school education ecosystem. Portal availability needs verification.",subjects:["School education","Open resources"],access:"Review required",region:"India",level:"School",initials:"NROER",source:"Institutional e-resource listing",needsReview:true},
+      {id:"openstax",name:"OpenStax",url:"https://openstax.org/",category:"Libraries",type:"Open textbook library",description:"Free, openly licensed textbooks for school and higher education.",subjects:["Science","Mathematics","Humanities","Textbooks"],access:"Open access",region:"United States",level:"School and higher education",initials:"OS",source:"Additional educational directory research"},
+      {id:"arxiv",name:"arXiv",url:"https://arxiv.org/",category:"Research",type:"Research preprint archive",description:"Open-access archive of scholarly articles in physics, mathematics, computer science and related fields.",subjects:["Science","Mathematics","Technology","Research"],access:"Open access",region:"Global",level:"Research",initials:"arXiv",source:"Additional educational directory research"},
+      {id:"nios",name:"NIOS eResources",url:"https://digital.nios.ac.in/",category:"Education",type:"Open schooling resources",description:"Digital resource portal associated with the National Institute of Open Schooling. NIOS offers open and distance schooling, including secondary and senior secondary study.",subjects:["School education","Open schooling","Textbooks"],access:"Free resources; enrolment services vary",region:"India",level:"Secondary and senior secondary",initials:"NIOS",source:"NIOS eResources portal and India.gov.in listing",sourceCheckedOn:"2026-11-17",addedOn:"2026-11-17"},
+      {id:"sathee",name:"SATHEE",url:"https://sathee.iitk.ac.in/",category:"Learning",type:"Exam preparation platform",description:"Learning and practice portal developed by the Ministry of Education with IIT Kanpur. Its listed pathways include entrance and recruitment examinations, practice material and learning support.",subjects:["Competitive exams","JEE","NEET","CUET","CLAT"],access:"Free learning resources",region:"India",level:"Exam preparation",initials:"SAT",source:"IIT Kanpur and Ministry of Education references",sourceCheckedOn:"2026-11-17",addedOn:"2026-11-17",featured:true},
+      {id:"eyantra",name:"e-Yantra",url:"https://www.e-yantra.org/",category:"Science",type:"Robotics and STEM education",description:"IIT Bombay initiative using project-based learning, robotics activities, competitions and online courses for students, teachers and institutions.",subjects:["Robotics","Engineering","STEM","Technology"],access:"Free and mixed participation",region:"India",level:"School and higher education",initials:"eY",source:"Official e-Yantra website",sourceCheckedOn:"2026-11-17",addedOn:"2026-11-17"},
+      {id:"fossee",name:"FOSSEE",url:"https://fossee.in/",category:"Learning",type:"Open-source software education",description:"IIT Bombay project promoting free and open-source software tools in education and research, with projects covering scientific and engineering software.",subjects:["Open-source software","Programming","Engineering","Science"],access:"Open-source tools; project terms vary",region:"India",level:"Higher education and research",initials:"FOS",source:"Official FOSSEE website",sourceCheckedOn:"2026-11-17",addedOn:"2026-11-17"},
+      {id:"spoken-tutorial",name:"Spoken Tutorial",url:"https://spoken-tutorial.in/",category:"Learning",type:"Software tutorial library",description:"Self-paced, multilingual tutorials for learning free and open-source software. The project is associated with IIT Bombay.",subjects:["Programming","Software","ICT","Digital skills"],access:"Free tutorials; some assessments have separate conditions",region:"India",level:"School and higher education",initials:"ST",source:"Spoken Tutorial website",sourceCheckedOn:"2026-11-17",addedOn:"2026-11-17"},
+      {id:"nsp",name:"National Scholarship Portal",url:"https://scholarships.gov.in/",category:"Opportunities",type:"Government scholarship portal",description:"Government portal for scholarship applications, renewals and scheme information. Eligibility, deadlines and application requirements depend on each scheme.",subjects:["Scholarships","Financial aid","Student support"],access:"Scheme-dependent",region:"India",level:"School and higher education",initials:"NSP",source:"National Scholarship Portal",sourceCheckedOn:"2026-11-17",addedOn:"2026-11-17"},
+      {id:"india-sti",name:"India Science, Technology & Innovation",url:"https://www.indiascienceandtechnology.gov.in/",category:"Science",type:"National science information portal",description:"Government of India portal connecting visitors to science, technology and innovation information and related national resources.",subjects:["Indian science","Technology","Research","Innovation"],access:"Free reference portal",region:"India",level:"General and research",initials:"ISTI",source:"Official portal reference in the government mega-portals directory",sourceCheckedOn:"2026-11-17",addedOn:"2026-11-17"},
+      {id:"ignca",name:"Indira Gandhi National Centre for the Arts",url:"https://ignca.gov.in/",category:"Culture & history",type:"Arts and cultural archives",description:"Research, reference-library collections, digital repositories and cultural archives covering Indian arts and heritage.",subjects:["Indian history","Art","Culture","Heritage","Manuscripts"],access:"Mixed access",region:"India",level:"General and research",initials:"IGNCA",source:"Official IGNCA website",sourceCheckedOn:"2026-11-17",addedOn:"2026-11-17"},
+      {id:"gutenberg",name:"Project Gutenberg",url:"https://www.gutenberg.org/",category:"Libraries",type:"Digital book library",description:"Free eBooks, with a strong collection of older literature and other works whose copyright has expired in the United States. Copyright status can differ by country.",subjects:["Literature","History","Philosophy","Books"],access:"Free eBooks; copyright varies by country",region:"Global",level:"General",initials:"PG",source:"Official Project Gutenberg website",sourceCheckedOn:"2026-11-17",addedOn:"2026-11-17",featured:true},
+      {id:"europeana",name:"Europeana",url:"https://www.europeana.eu/",category:"Culture & history",type:"Cultural heritage collection",description:"Search and explore digitised art, books, films, music and other cultural heritage items from institutions across Europe. Reuse rights vary by item.",subjects:["European history","Art","Archaeology","Culture","Archives"],access:"Mixed access; rights vary by item",region:"Europe",level:"General and research",initials:"EU",source:"Official Europeana website",sourceCheckedOn:"2026-11-17",addedOn:"2026-11-17"},
+      {id:"core",name:"CORE",url:"https://core.ac.uk/",category:"Research",type:"Open research discovery service",description:"Search and discover research papers from repositories and journals. Full-text availability depends on the individual record and provider.",subjects:["Research","Academic papers","All disciplines"],access:"Free search; full text varies",region:"Global",level:"Research",initials:"CORE",source:"Official CORE website",sourceCheckedOn:"2026-11-17",addedOn:"2026-11-17"},
+      {id:"openalex",name:"OpenAlex",url:"https://openalex.org/",category:"Research",type:"Scholarly research catalogue",description:"Open catalogue of scholarly works, authors, institutions, journals and related research information. The website, data and API have separate usage details.",subjects:["Research","Bibliometrics","Academic papers","All disciplines"],access:"Free catalogue; API terms vary",region:"Global",level:"Research",initials:"OA",source:"Official OpenAlex website and transparency page",sourceCheckedOn:"2026-11-17",addedOn:"2026-11-17"},
+      {id:"eric",name:"ERIC",url:"https://eric.ed.gov/",category:"Research",type:"Education research database",description:"Education research database sponsored by the US Institute of Education Sciences. Records include journal and non-journal literature; full text is available for some items.",subjects:["Education research","Teaching","Education policy","Learning"],access:"Free database; full text varies",region:"United States",level:"Research and education",initials:"ERIC",source:"US Institute of Education Sciences and ERIC website",sourceCheckedOn:"2026-11-17",addedOn:"2026-11-17"},
+      {id:"pubmed",name:"PubMed",url:"https://pubmed.ncbi.nlm.nih.gov/",category:"Research",type:"Biomedical literature database",description:"Free search and retrieval of biomedical and life-sciences literature citations and abstracts. PubMed records may link to full text from PubMed Central or publishers.",subjects:["Biomedical sciences","Medicine","Life sciences","Research"],access:"Free search; full text varies",region:"United States",level:"Research and higher education",initials:"PM",source:"US National Library of Medicine and NCBI",sourceCheckedOn:"2026-11-17",addedOn:"2026-11-17"},
+      {id:"open-textbook-library",name:"Open Textbook Library",url:"https://open.umn.edu/opentextbooks/",category:"Libraries",type:"Open textbook catalogue",description:"Catalogue of textbooks that authors and publishers make available under open licences. The library's criteria explain which licences allow reuse and adaptation.",subjects:["Textbooks","Higher education","Science","Humanities"],access:"Openly licensed textbooks",region:"United States",level:"Higher education",initials:"OTL",source:"University of Minnesota Open Textbook Library",sourceCheckedOn:"2026-11-17",addedOn:"2026-11-17"},
+      {id:"libretexts",name:"LibreTexts",url:"https://libretexts.org/",category:"Libraries",type:"Open education resource platform",description:"Platform for creating, adapting and sharing textbooks, homework and interactive learning materials across subject libraries. Licence terms depend on each item.",subjects:["Textbooks","Science","Mathematics","Humanities","Engineering"],access:"Open resources; terms vary by item",region:"United States",level:"School and higher education",initials:"LT",source:"Official LibreTexts website",sourceCheckedOn:"2026-11-17",addedOn:"2026-11-17"},
+      {id:"open-yale",name:"Open Yale Courses",url:"https://oyc.yale.edu/",category:"Learning",type:"Open university course materials",description:"Selected Yale College courses with recorded lectures and supporting materials. The site is free to access and does not provide course credit, a degree or a certificate. Course materials are subject to Yale's stated use terms.",subjects:["Humanities","Social sciences","Science","Philosophy"],access:"Free access; use terms apply",region:"United States",level:"Higher education and general",initials:"Yale",source:"Official Yale University Open Yale Courses website",sourceCheckedOn:"2026-11-17",addedOn:"2026-11-17"},
+      {id:"oapen",name:"OAPEN",url:"https://www.oapen.org/",category:"Libraries",type:"Open-access academic book library",description:"Infrastructure and library for peer-reviewed open-access books, with browsing by subject, publisher, collection and language.",subjects:["Academic books","Humanities","Social sciences","Research"],access:"Open access books",region:"Global",level:"Higher education and research",initials:"OAP",source:"Official OAPEN website",sourceCheckedOn:"2026-11-17",addedOn:"2026-11-17"}
+    ];
+
+    const collectionIds = {
+      india: ["cbse","ncert","moe","diksha","rashtriya-epustakalaya","egyankosh","cenbosec","ndl","nptel","swayam","epathshala","shodhganga","vlabs","epg","swayamprabha","olabs","nios","sathee","eyantra","fossee","spoken-tutorial","nsp","india-sti","ignca"],
+      "open-library": ["archive","egyankosh","rashtriya-epustakalaya","ndl","openstax","gutenberg","europeana","open-textbook-library","libretexts","oapen"],
+      research: ["jstor","doaj","shodhganga","arxiv","core","openalex","eric","pubmed","mit"],
+      science: ["mit","nptel","vlabs","olabs","arxiv","eyantra","fossee","india-sti","libretexts"],
+      humanities: ["jstor","archive","gutenberg","europeana","ignca","open-yale","oapen","egyankosh"],
+      school: ["cbse","ncert","diksha","rashtriya-epustakalaya","khan","epathshala","olabs","nios","sathee"],
+      "open-courses": ["mit","khan","swayam","nptel","epg","swayamprabha","sathee","eyantra","open-yale"]
+    };
+    const collectionLabels = {
+      india: "India learning shelf", "open-library": "Open libraries", research: "Research starting points",
+      science: "Science and computing", humanities: "Humanities and culture", school: "School learning", "open-courses": "Open courses"
+    };
+    const categoryLabels = ["All", "Education", "Libraries", "Learning", "Research", "Science", "Culture & history", "Opportunities"];
+    const q = (selector, root = document) => root.querySelector(selector);
+    const qa = (selector, root = document) => [...root.querySelectorAll(selector)];
+    const state = { query: "", category: "All", subject: "", region: "", level: "", access: "", sort: "featured", collection: "", savedOnly: false };
+    let savedIds = new Set();
+    let storageAvailable = true;
+    let lastDialogTrigger = null;
+    let lastDialogResourceId = null;
+    let currentDialogResource = null;
+
+    function safe(value) {
+      return String(value).replace(/[&<>"']/g, char => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[char]));
+    }
+    function uniqueValues(values) {
+      return [...new Set(values)].sort((a, b) => a.localeCompare(b));
+    }
+    function dateLabel(value) {
+      if (!value) return "Not recorded";
+      const date = new Date(`${value}T00:00:00`);
+      return Number.isNaN(date.getTime()) ? value : new Intl.DateTimeFormat("en", {day:"numeric",month:"short",year:"numeric"}).format(date);
+    }
+    function setToast(message) {
+      const toast = q("#toast");
+      toast.textContent = message;
+      toast.hidden = false;
+      window.clearTimeout(setToast.timer);
+      setToast.timer = window.setTimeout(() => { toast.hidden = true; }, 2800);
+    }
+    function scrollToDirectory() {
+      const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      q("#directory").scrollIntoView({behavior: reduceMotion ? "auto" : "smooth", block: "start"});
+    }
+    function updateCategoryButtons() {
+      qa("[data-category]").forEach(button => {
+        button.setAttribute("aria-pressed", String(button.dataset.category === state.category));
+      });
+    }
+    function populateSelect(selectId, values, initialLabel) {
+      const select = q(selectId);
+      const selected = select.value;
+      select.innerHTML = `<option value="">${safe(initialLabel)}</option>` + values.map(value => `<option value="${safe(value)}">${safe(value)}</option>`).join("");
+      if (values.includes(selected)) select.value = selected;
+    }
+    function populateFilters() {
+      populateSelect("#subjectFilter", uniqueValues(resources.flatMap(item => item.subjects)), "All subjects");
+      populateSelect("#regionFilter", uniqueValues(resources.map(item => item.region)), "All regions");
+      populateSelect("#levelFilter", uniqueValues(resources.map(item => item.level)), "All levels");
+      populateSelect("#accessFilter", uniqueValues(resources.map(item => item.access)), "All access types");
+    }
+    function filteredResources() {
+      const term = state.query.toLocaleLowerCase();
+      const items = resources.filter(item => {
+        const searchable = [item.name,item.description,item.category,item.type,item.region,item.level,item.access,...item.subjects].join(" ").toLocaleLowerCase();
+        return (!term || searchable.includes(term))
+          && (state.category === "All" || item.category === state.category)
+          && (!state.subject || item.subjects.includes(state.subject))
+          && (!state.region || item.region === state.region)
+          && (!state.level || item.level === state.level)
+          && (!state.access || item.access === state.access)
+          && (!state.collection || (collectionIds[state.collection] || []).includes(item.id))
+          && (!state.savedOnly || savedIds.has(item.id));
+      });
+      if (state.sort === "az") items.sort((a,b) => a.name.localeCompare(b.name));
+      if (state.sort === "za") items.sort((a,b) => b.name.localeCompare(a.name));
+      if (state.sort === "recent") items.sort((a,b) => (b.addedOn || "").localeCompare(a.addedOn || "") || a.name.localeCompare(b.name));
+      if (state.sort === "featured") items.sort((a,b) => Number(!!b.featured) - Number(!!a.featured) || a.name.localeCompare(b.name));
+      return items;
+    }
+    function resourceCard(item) {
+      const reviewTag = item.needsReview ? '<span class="tag status-review">Needs review</span>' : "";
+      const saved = savedIds.has(item.id);
+      return `<article class="resource-card">
+        <div class="card-top">
+          <p class="resource-type">${safe(item.type)}</p>
+          <button class="save-button" type="button" data-save="${safe(item.id)}" aria-pressed="${saved}" aria-label="${saved ? "Remove" : "Save"} ${safe(item.name)} ${saved ? "from" : "to"} saved resources">${saved ? "Saved" : "Save"}</button>
+        </div>
+        <h3><a href="${safe(item.url)}" target="_blank" rel="noopener noreferrer">${safe(item.name)}</a></h3>
+        <p class="description">${safe(item.description)}</p>
+        <div class="tag-list">
+          <span class="tag">${safe(item.category)}</span>
+          <span class="tag">${safe(item.region)}</span>
+          <span class="tag">${safe(item.access)}</span>
+          ${reviewTag}
+        </div>
+        <div class="card-footer">
+          <small>${safe(item.level)}</small>
+          <div class="card-actions">
+            <button type="button" data-details="${safe(item.id)}">Details</button>
+            <a href="${safe(item.url)}" target="_blank" rel="noopener noreferrer">Visit site</a>
+          </div>
+        </div>
+      </article>`;
+    }
+    function updateEmptyState(items) {
+      const empty = q("#emptyState");
+      if (items.length) { empty.hidden = true; return; }
+      empty.hidden = false;
+      if (state.savedOnly && savedIds.size === 0) {
+        q("#emptyTitle").textContent = "Nothing saved yet";
+        q("#emptyText").textContent = "Save a resource with the Save button and it will appear in this list on this browser.";
+        q("#emptyAction").textContent = "Show all resources";
+      } else {
+        q("#emptyTitle").textContent = "No matching resources";
+        q("#emptyText").textContent = "Try another keyword or change a filter to see more results.";
+        q("#emptyAction").textContent = "Clear filters";
+      }
+    }
+    function render() {
+      const items = filteredResources();
+      q("#resourceGrid").innerHTML = items.map(resourceCard).join("");
+      q("#resourceTotal").textContent = `${resources.length} resources`;
+      q("#resultCount").textContent = `${items.length} ${items.length === 1 ? "resource" : "resources"} shown`;
+      q("#savedToggle").textContent = `Saved resources (${savedIds.size})`;
+      q("#savedToggle").setAttribute("aria-pressed", String(state.savedOnly));
+      q("#activeCollection").textContent = state.collection ? `Collection: ${collectionLabels[state.collection]}` : "";
+      updateEmptyState(items);
+      updateCategoryButtons();
+    }
+    function clearFilters() {
+      state.query = ""; state.category = "All"; state.subject = ""; state.region = "";
+      state.level = ""; state.access = ""; state.sort = "featured"; state.collection = ""; state.savedOnly = false;
+      q("#heroSearch").value = ""; q("#directorySearch").value = ""; q("#sortOrder").value = "featured";
+      q("#subjectFilter").value = ""; q("#regionFilter").value = ""; q("#levelFilter").value = ""; q("#accessFilter").value = "";
+      render();
+    }
+    function applyCollection(collection) {
+      if (!collectionIds[collection]) return;
+      clearFilters();
+      state.collection = collection;
+      render();
+      scrollToDirectory();
+    }
+    function persistSaved() {
+      try { localStorage.setItem("lunivo-saved", JSON.stringify([...savedIds])); storageAvailable = true; }
+      catch { storageAvailable = false; setToast("Browser storage is unavailable. Saved resources will last for this session."); }
+    }
+    function toggleSaved(id) {
+      if (savedIds.has(id)) { savedIds.delete(id); setToast("Resource removed from saved resources."); }
+      else { savedIds.add(id); setToast("Resource saved on this browser."); }
+      persistSaved();
+      render();
+      if (currentDialogResource && currentDialogResource.id === id) updateDialogSave();
+    }
+    function updateDialogSave() {
+      if (!currentDialogResource) return;
+      const saved = savedIds.has(currentDialogResource.id);
+      q("#dialogSave").textContent = saved ? "Remove saved resource" : "Save resource";
+      q("#dialogSave").setAttribute("aria-pressed", String(saved));
+    }
+    function openDetails(id, trigger) {
+      const item = resources.find(resource => resource.id === id);
+      if (!item) return;
+      lastDialogTrigger = trigger || document.activeElement;
+      lastDialogResourceId = item.id;
+      currentDialogResource = item;
+      q("#dialogTitle").textContent = item.name;
+      q("#dialogDescription").textContent = item.description;
+      q("#dialogCategory").textContent = item.category;
+      q("#dialogType").textContent = item.type;
+      q("#dialogSubjects").textContent = item.subjects.join(", ");
+      q("#dialogLevel").textContent = item.level;
+      q("#dialogRegion").textContent = item.region;
+      q("#dialogAccess").textContent = item.access;
+      q("#dialogReview").textContent = item.needsReview ? "Needs verification" : item.sourceCheckedOn ? `Source reviewed ${dateLabel(item.sourceCheckedOn)}` : "Legacy or institutional listing; check destination before relying on it";
+      q("#dialogSource").textContent = item.source || "Lunivo catalogue";
+      q("#dialogVisit").href = item.url;
+      updateDialogSave();
+      q("#resourceDialog").showModal();
+      q("#dialogClose").focus();
+    }
+    function closeDetails() {
+      if (q("#resourceDialog").open) q("#resourceDialog").close();
+    }
+    function renderAdditions() {
+      const additions = resources.filter(item => item.addedOn).sort((a,b) => b.addedOn.localeCompare(a.addedOn) || a.name.localeCompare(b.name));
+      q("#additionList").innerHTML = additions.map(item => `<article class="addition-item"><a href="${safe(item.url)}" target="_blank" rel="noopener noreferrer">${safe(item.name)}</a><small>${safe(item.category)} · Added ${safe(dateLabel(item.addedOn))}</small></article>`).join("");
+    }
+    function setTheme(theme) {
+      document.documentElement.dataset.theme = theme;
+      const next = theme === "dark" ? "light" : "dark";
+      q("#themeToggle").textContent = theme === "dark" ? "Light theme" : "Dark theme";
+      q("#themeToggle").setAttribute("aria-label", `Switch to ${next} theme`);
+      q("#themeToggle").setAttribute("aria-pressed", String(theme === "light"));
+      try { localStorage.setItem("lunivo-theme", theme); } catch { /* Theme still works for this page view. */ }
+    }
+    function validateCatalogue() {
+      const ids = resources.map(item => item.id);
+      if (new Set(ids).size !== ids.length) throw new Error("Duplicate resource IDs in catalogue.");
+      for (const item of resources) {
+        const url = new URL(item.url);
+        if (url.protocol !== "https:") throw new Error(`Non-HTTPS resource URL: ${item.id}`);
+        if (!item.name || !item.description || !item.subjects.length) throw new Error(`Incomplete resource record: ${item.id}`);
+      }
+      for (const [key, idsForCollection] of Object.entries(collectionIds)) {
+        if (idsForCollection.some(id => !ids.includes(id))) throw new Error(`Unknown resource in collection: ${key}`);
+      }
+    }
+    function init() {
+      try {
+        validateCatalogue();
+        try {
+          const stored = JSON.parse(localStorage.getItem("lunivo-saved") || "[]");
+          if (Array.isArray(stored)) savedIds = new Set(stored.filter(id => resources.some(item => item.id === id)));
+        } catch { storageAvailable = false; }
+        let storedTheme = "dark";
+        try { storedTheme = localStorage.getItem("lunivo-theme") || "dark"; } catch { storageAvailable = false; }
+        setTheme(storedTheme === "light" ? "light" : "dark");
+        populateFilters();
+        q("#currentYear").textContent = new Date().getFullYear();
+        renderAdditions();
+        render();
+        q("#loadingState").hidden = true;
+
+        q("#heroSearchForm").addEventListener("submit", event => {
+          event.preventDefault();
+          state.query = q("#heroSearch").value.trim();
+          q("#directorySearch").value = state.query;
+          state.collection = "";
+          render();
+          scrollToDirectory();
+        });
+        q("#directorySearch").addEventListener("input", event => {
+          state.query = event.target.value.trim();
+          q("#heroSearch").value = state.query;
+          state.collection = "";
+          render();
+        });
+        qa("[data-query]").forEach(button => button.addEventListener("click", () => {
+          state.query = button.dataset.query;
+          q("#heroSearch").value = state.query;
+          q("#directorySearch").value = state.query;
+          state.collection = "";
+          render();
+          scrollToDirectory();
+        }));
+        qa("[data-category]").forEach(button => button.addEventListener("click", () => {
+          state.category = button.dataset.category;
+          state.collection = "";
+          render();
+          scrollToDirectory();
+        }));
+        qa("[data-collection]").forEach(link => link.addEventListener("click", () => applyCollection(link.dataset.collection)));
+        q("#sortOrder").addEventListener("change", event => { state.sort = event.target.value; render(); });
+        [["#subjectFilter","subject"],["#regionFilter","region"],["#levelFilter","level"],["#accessFilter","access"]].forEach(([selector,key]) => {
+          q(selector).addEventListener("change", event => { state[key] = event.target.value; state.collection = ""; render(); });
+        });
+        q("#savedToggle").addEventListener("click", () => { state.savedOnly = !state.savedOnly; render(); });
+        q("#clearFilters").addEventListener("click", clearFilters);
+        q("#emptyAction").addEventListener("click", () => {
+          if (state.savedOnly && savedIds.size === 0) { state.savedOnly = false; render(); }
+          else clearFilters();
+        });
+        q("#resourceGrid").addEventListener("click", event => {
+          const save = event.target.closest("[data-save]");
+          if (save) { toggleSaved(save.dataset.save); return; }
+          const details = event.target.closest("[data-details]");
+          if (details) openDetails(details.dataset.details, details);
+        });
+        q("#dialogClose").addEventListener("click", closeDetails);
+        q("#dialogSave").addEventListener("click", () => { if (currentDialogResource) toggleSaved(currentDialogResource.id); });
+        q("#resourceDialog").addEventListener("cancel", event => {
+          event.preventDefault();
+          closeDetails();
+        });
+        q("#resourceDialog").addEventListener("click", event => { if (event.target === q("#resourceDialog")) closeDetails(); });
+        q("#resourceDialog").addEventListener("close", () => {
+          currentDialogResource = null;
+          const trigger = lastDialogTrigger && document.contains(lastDialogTrigger)
+            ? lastDialogTrigger
+            : qa("[data-details]").find(button => button.dataset.details === lastDialogResourceId);
+          const focusTarget = trigger || q("#savedToggle");
+          lastDialogTrigger = null;
+          lastDialogResourceId = null;
+          window.setTimeout(() => focusTarget.focus(), 50);
+        });
+        q("#themeToggle").addEventListener("click", () => setTheme(document.documentElement.dataset.theme === "dark" ? "light" : "dark"));
+        q("#menuToggle").addEventListener("click", () => {
+          const isOpen = q("#siteNav").classList.toggle("open");
+          q("#menuToggle").setAttribute("aria-expanded", String(isOpen));
+          q("#menuToggle").setAttribute("aria-label", isOpen ? "Close navigation menu" : "Open navigation menu");
+        });
+        qa("#siteNav a").forEach(link => link.addEventListener("click", () => {
+          q("#siteNav").classList.remove("open");
+          q("#menuToggle").setAttribute("aria-expanded", "false");
+          q("#menuToggle").setAttribute("aria-label", "Open navigation menu");
+        }));
+        q("#reloadDirectory").addEventListener("click", () => window.location.reload());
+        if (!storageAvailable) setToast("Browser storage is unavailable. Bookmarks and theme choice may reset when you leave.");
+      } catch (error) {
+        q("#loadingState").hidden = true;
+        q("#resourceGrid").innerHTML = "";
+        q("#errorState").hidden = false;
+        console.error("Lunivo catalogue error:", error);
+      }
+    }
+    init();
+  </script>
+</body>
+</html>
