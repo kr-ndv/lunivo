@@ -24,7 +24,7 @@ Open `index.html` in a modern browser. Google Fonts are requested for Space Grot
 
 ## Deploy
 
-Suitable for GitHub Pages or another static web host. To publish with GitHub Pages, open repository Settings, choose Pages, select **Deploy from a branch**, then select `main` and `/(root)`. Hosting is not enabled by this code change.
+Published with GitHub Pages: https://kr-ndv.github.io/lunivo/ . The site is served from the `main` branch at the repository root.
 
 ## Catalogue and editorial policy
 
@@ -43,7 +43,6 @@ Use the GitHub Issues links in the site footer to suggest a resource or report a
 - Review the legacy records still marked **Needs review**.
 - Recheck destination availability, access descriptions and usage terms periodically.
 - Test current desktop and mobile browsers, keyboard-only use, screen-reader labels and both themes.
-- Enable GitHub Pages or connect another static host.
 - Check all external links after deployment. Browser-only bookmarks are stored on the visitor's device and do not sync.
 
 ## Brand
